@@ -389,15 +389,26 @@ public class CustomElement implements Cloneable {
             return str;
         }
 
-		return str.replace("<", "&lt;")
+	    // TODO Bien tester. Je ne comprends pas encore pourquoi replaceNonXMLCharacters est appelé à chaque Save mais restoreNonXMLCharacters n'est appelé ni au démarrage ni lors de l'affichage des cartes 
+//		if(str.contains("'"))
+//		{
+//			System.out.println("échape");
+//		}
+
+		return str.replace("&", "&amp;")
+				.replace("<", "&lt;")
 				.replace(">","&gt;")
 				.replace("\"", "&quot;")
-				.replace("'", "&apos;")
-				.replace("&", "&amp;");
+				.replace("'", "&apos;");
 	}
 	
 	public String restoreNonXMLCharacters(String str)
 	{
+//		System.out.println(str);
+//		if(str.contains("&apos;"))
+//		{
+//			System.out.println("dés-échape");
+//		}
 		return str.replace("&lt;", "<")
 				.replace("&gt;", ">")
 				.replace("&quot;","\"")

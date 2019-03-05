@@ -27,6 +27,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 import org.w3c.dom.Element;
+import legedit2.helpers.LegeditHelper;
 
 public class LegeditExportTool3x3 extends JFrame 
 {
@@ -60,7 +61,7 @@ public class LegeditExportTool3x3 extends JFrame
 			add(new JLabel("Working..."));
 			setVisible(true);
 			
-			JFileChooser chooser = new JFileChooser();
+			JFileChooser chooser = new JFileChooser(LegeditHelper.getLastOpenDirectory());
 			chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
 			int outcome = chooser.showOpenDialog(this);
 			if (outcome == JFileChooser.APPROVE_OPTION)

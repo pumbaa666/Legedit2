@@ -455,8 +455,7 @@ public class CardType extends ItemType implements Cloneable {
 			{
 				elementIcon.maxHeight = Integer.parseInt(node.getAttributes().getNamedItem("maxheight").getNodeValue());
 			}
-			
-			
+						
 			if (node.getAttributes().getNamedItem("drawunderlay") != null)
 			{
 				elementIcon.drawUnderlay = Boolean.parseBoolean(node.getAttributes().getNamedItem("drawunderlay").getNodeValue());
@@ -569,7 +568,6 @@ public class CardType extends ItemType implements Cloneable {
 			{
 				element.maxHeight = Integer.parseInt(node.getAttributes().getNamedItem("maxheight").getNodeValue());
 			}
-			
 			
 			if (node.getAttributes().getNamedItem("zoomable") != null)
 			{

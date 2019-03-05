@@ -9,7 +9,7 @@ import javax.imageio.ImageIO;
 import legedit2.card.Card;
 import legedit2.helpers.ProjectHelper;
 
-public class LegeditExporter {
+public abstract class LegeditExporter {
 	
 	private int currentValue;
 	private int maxValue;
@@ -18,16 +18,9 @@ public class LegeditExporter {
 	
 	private boolean jpegMode = false;
 
-	public int getExportCount()
-	{
-		return 100;
-	}
+	public abstract int getExportCount();
+	public abstract void export(File exportDirectory);
 	
-	public void export(File exportDirectory)
-	{
-		return;
-	}
-
 	public int getMaxValue() {
 		return maxValue;
 	}

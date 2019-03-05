@@ -49,7 +49,7 @@ public class LegeditExportDialog extends JDialog implements ActionListener, Prop
 	
 	public void export()
 	{
-		JFileChooser chooser = new JFileChooser();
+		JFileChooser chooser = new JFileChooser(LegeditHelper.getLastOpenDirectory());
 		chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
 		int result = chooser.showSaveDialog(LegeditFrame.legedit);
 		if (result == JFileChooser.APPROVE_OPTION)
@@ -74,7 +74,7 @@ public class LegeditExportDialog extends JDialog implements ActionListener, Prop
 	
 	public void exportSingle()
 	{
-		JFileChooser chooser = new JFileChooser();
+		JFileChooser chooser = new JFileChooser(LegeditHelper.getLastOpenDirectory());
 		chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
 		int result = chooser.showSaveDialog(LegeditFrame.legedit);
 		if (result == JFileChooser.APPROVE_OPTION)

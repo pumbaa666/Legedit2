@@ -3,7 +3,7 @@ package legedit2.definitions;
 import legedit2.cardtype.CardType;
 import legedit2.decktype.DeckType;
 
-public class LegeditItem {
+public abstract class LegeditItem {
 
 	public String getLegeditName()
 	{
@@ -23,18 +23,9 @@ public class LegeditItem {
 		throw new RuntimeException("Unknown Item Type");
 	}
 	
-	public int getDistinctCardCount()
-	{
-		return 0;
-	}
+	public abstract int getDistinctCardCount();
 	
-	public int getTotalCardCount()
-	{
-		return 0;
-	}
+	public abstract int getTotalCardCount();
 	
-	public String getDifferenceXML()
-	{
-		return "";
-	}
+	public abstract String getDifferenceXML();
 }

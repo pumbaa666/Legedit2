@@ -6,7 +6,6 @@ import java.awt.GridLayout;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.File;
-
 import javax.swing.JFrame;
 import javax.swing.JLayeredPane;
 import javax.swing.JPanel;
@@ -14,8 +13,6 @@ import javax.swing.JRootPane;
 import javax.swing.JTabbedPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
-
-import javafx.stage.Popup;
 import legedit2.card.Card;
 import legedit2.cardtype.CardType;
 import legedit2.gui.config.ConfigPanel;
@@ -31,6 +28,17 @@ import legedit2.gui.project.ProjectPanelColumns;
 import legedit2.gui.project.ProjectPanelCombined;
 import legedit2.helpers.LegeditHelper;
 import legedit2.helpers.ProjectHelper;
+
+/*
+ * TODO - Technique
+ * Rendre les font paramétrables pour chaque "element"
+ */
+
+/*
+ * TODO - Métier
+ * - Images pour chaque carte
+ * - Trouver un nom pour chaque Hazard (comme dans Predator)
+ */
 
 public class LegeditFrame extends JFrame {
 	private static final long serialVersionUID = -81856009542857672L;
@@ -149,21 +157,9 @@ public class LegeditFrame extends JFrame {
 		{
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		}
-		catch (UnsupportedLookAndFeelException e)
+		catch (UnsupportedLookAndFeelException | ClassNotFoundException | InstantiationException | IllegalAccessException e)
 		{
-			// handle exception
-		}
-		catch (ClassNotFoundException e)
-		{
-			// handle exception
-		}
-		catch (InstantiationException e)
-		{
-			// handle exception
-		}
-		catch (IllegalAccessException e)
-		{
-			// handle exception
+			// TODO handle exception
 		}
 		
 		new LegeditFrame();

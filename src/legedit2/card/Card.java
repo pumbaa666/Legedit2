@@ -219,11 +219,13 @@ public class Card extends LegeditItem implements Comparator<Card>, Comparable<Ca
 		this.templateName = templateName;
 	}
 	
+	@Override
 	public int getDistinctCardCount()
 	{	
 		return 1;
 	}
 	
+	@Override
 	public int getTotalCardCount()
 	{
 		for (CustomElement ce : getTemplate().elements)
@@ -270,6 +272,7 @@ public class Card extends LegeditItem implements Comparator<Card>, Comparable<Ca
 		Card.staticCard = staticCard;
 	}
 	
+	@Override
 	public String getDifferenceXML()
 	{
 		String str = "";

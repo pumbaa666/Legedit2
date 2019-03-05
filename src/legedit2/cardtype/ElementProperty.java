@@ -59,6 +59,7 @@ public class ElementProperty extends CustomElement {
 		}
 	}
 	
+	@Override
 	public void loadValues(Node node, Card card)
 	{
 		if (!node.getNodeName().equals("property"))
@@ -73,6 +74,7 @@ public class ElementProperty extends CustomElement {
 		}
 	}
 	
+	@Override
 	public String getDifferenceXML()
 	{
 		String str = "";

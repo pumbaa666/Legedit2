@@ -20,6 +20,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import legedit2.helpers.LegeditHelper;
 
 public class LegeditBleeder extends JFrame 
 {
@@ -55,7 +56,7 @@ public class LegeditBleeder extends JFrame
 			add(new JLabel("Working..."));
 			setVisible(true);
 			
-			JFileChooser chooser = new JFileChooser();
+			JFileChooser chooser = new JFileChooser(LegeditHelper.getLastOpenDirectory());
 			chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
 			int outcome = chooser.showOpenDialog(this);
 			if (outcome == JFileChooser.APPROVE_OPTION)

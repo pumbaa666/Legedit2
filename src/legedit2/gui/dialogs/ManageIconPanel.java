@@ -279,7 +279,7 @@ public class ManageIconPanel extends JPanel implements ActionListener, ItemListe
 		{
 			iconFile = null;
 			
-			JFileChooser chooser = new JFileChooser();
+			JFileChooser chooser = new JFileChooser(LegeditHelper.getLastOpenDirectory());
 			int outcome = chooser.showOpenDialog(LegeditFrame.legedit);
 			if (outcome == JFileChooser.APPROVE_OPTION)
 			{

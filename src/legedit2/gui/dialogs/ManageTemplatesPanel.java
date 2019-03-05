@@ -279,7 +279,7 @@ public class ManageTemplatesPanel extends JPanel implements ActionListener, Item
 		{
 			iconFile = null;
 			
-			JFileChooser chooser = new JFileChooser();
+			JFileChooser chooser = new JFileChooser(LegeditHelper.getLastOpenDirectory());
 			int outcome = chooser.showOpenDialog(LegeditFrame.legedit);
 			if (outcome == JFileChooser.APPROVE_OPTION)
 			{

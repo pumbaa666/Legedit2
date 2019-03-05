@@ -152,11 +152,13 @@ public class Deck extends LegeditItem implements Comparator<Deck>, Comparable<De
 		this.cards = cards;
 	}
 	
+	@Override
 	public int getDistinctCardCount()
 	{
 		return cards.size();
 	}
 	
+	@Override
 	public int getTotalCardCount()
 	{
 		int i = 0;
@@ -175,6 +177,7 @@ public class Deck extends LegeditItem implements Comparator<Deck>, Comparable<De
 		Deck.staticDeck = staticDeck;
 	}
 	
+	@Override
 	public String getDifferenceXML()
 	{
 		String str = "";

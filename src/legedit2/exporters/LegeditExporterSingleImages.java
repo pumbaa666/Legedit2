@@ -18,12 +18,12 @@ public class LegeditExporterSingleImages extends LegeditExporter {
 	
 	private File exportDirectory;
 	
-	public int getExportCount()
+	@Override public int getExportCount()
 	{
 		return ProjectHelper.getDistinctCardCount();
 	}
 	
-	public void export(File exportDirectory)
+	@Override public void export(File exportDirectory)
 	{
 		this.exportDirectory = exportDirectory;
 		

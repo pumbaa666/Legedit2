@@ -364,6 +364,7 @@ public class CardPropertyPanel extends JPanel implements ActionListener {
 					if (outcome == JFileChooser.APPROVE_OPTION)
 					{
 						fileNameLabel.setText(chooser.getSelectedFile().getName());
+						LegeditHelper.setLastOpenDirectory(chooser.getSelectedFile().getAbsolutePath());
 					}
 				}
 			});

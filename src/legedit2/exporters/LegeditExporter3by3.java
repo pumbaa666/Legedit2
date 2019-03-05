@@ -31,12 +31,12 @@ public class LegeditExporter3by3 extends LegeditExporter {
 	
 	static int dpi = 300;
 	
-	public int getExportCount()
+	@Override public int getExportCount()
 	{
 		return ProjectHelper.getDistinctCardCount();
 	}
 	
-	public void export(File exportDirectory)
+	@Override public void export(File exportDirectory)
 	{
 		this.exportDirectory = exportDirectory;
 		
