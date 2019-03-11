@@ -1,45 +1,29 @@
 package legedit2.helpers;
 
-import java.awt.Color;
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileReader;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
-import java.lang.reflect.Field;
+import java.io.OutputStreamWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
 import javax.swing.JOptionPane;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-
 import legedit2.card.Card;
 import legedit2.cardtype.CardType;
 import legedit2.cardtype.CustomElement;
-import legedit2.cardtype.CustomProperties;
-import legedit2.cardtype.ElementBackgroundImage;
-import legedit2.cardtype.ElementCardName;
-import legedit2.cardtype.ElementIcon;
-import legedit2.cardtype.ElementImage;
-import legedit2.cardtype.ElementProperty;
-import legedit2.cardtype.ElementText;
-import legedit2.cardtype.ElementTextArea;
 import legedit2.cardtype.Style;
-import legedit2.cardtype.ElementCardName.HIGHLIGHT;
 import legedit2.deck.Deck;
 import legedit2.decktype.DeckType;
-import legedit2.definitions.Icon;
 import legedit2.definitions.LegeditItem;
-import legedit2.definitions.Icon.ICON_TYPE;
 import legedit2.gui.LegeditFrame;
 import legedit2.gui.project.CardTypeSelectionPanel;
-import legedit2.imaging.CustomCardMaker;
 
 public class ProjectHelper {
 	
@@ -58,6 +42,7 @@ public class ProjectHelper {
 		{
 			CardTypeSelectionPanel.getCardListModelStatic().clear();
 		}
+		
 	}
 	
 	public static List<Card> getCards()
@@ -370,25 +355,18 @@ public class ProjectHelper {
 		FileWriter fw = null;
 		try
 		{
-			String str = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n";
-			str += "<xml>\n\n";
-			
-			str += "<legedititems>\n";
-			for (LegeditItem item : ProjectHelper.getLegeditItems())
+			try(OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(saveFile), StandardCharsets.UTF_8))
 			{
-				str += item.getDifferenceXML() + "\n\n";
+				String str = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n";
+				str += "<xml>\n\n";
+				str += "<legedititems>\n";
+				writer.write(str);
+				
+				for (LegeditItem item : ProjectHelper.getLegeditItems())
+					writer.write(item.getDifferenceXML() + "\n\n");
+
+				writer.write("</legedititems>\n\n</xml>");
 			}
-			str += "</legedititems>\n\n";
-			
-			str += "</xml>";
-			
-			fw = new FileWriter(saveFile);
-			BufferedWriter bw = new BufferedWriter(fw);
-			
-			bw.write(str);
-			
-			bw.close();
-			fw.close();
 		}
 		catch (Exception e)
 		{

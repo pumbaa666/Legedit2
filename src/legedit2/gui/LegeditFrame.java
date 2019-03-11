@@ -32,6 +32,8 @@ import legedit2.helpers.ProjectHelper;
 /*
  * TODO - Technique
  * Rendre les font paramétrables pour chaque "element"
+ * Sauver les emplacements des images en mode relatif
+ * Template pour mettre le nom des deck (Harry, Ron, Objectif 1, ...) en bas de carte
  */
 
 /*
