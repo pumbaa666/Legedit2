@@ -6,7 +6,8 @@ import java.awt.geom.AffineTransform;
 import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
 import java.io.File;
-
+import java.io.IOException;
+import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
@@ -57,12 +58,29 @@ public class ElementImage extends CustomElement {
 			BufferedImage bi = null;
 			if (fullSize)
 			{
-				bi = resizeImage(new ImageIcon(file), getPercentage(CustomCardMaker.cardWidth,getScale()), getPercentage(CustomCardMaker.cardHeight, getScale()));
+				try
+				{
+					bi = resizeImage(ImageIO.read(new File(file)), getPercentage(CustomCardMaker.cardWidth,getScale()), getPercentage(CustomCardMaker.cardHeight,getScale()));				
+				}
+				catch(IOException e)
+				{
+					e.printStackTrace();
+				}
+
 			}
 			else
 			{
-				ImageIcon ii = new ImageIcon(file);
-				bi = resizeImage(new ImageIcon(file), getPercentage(ii.getIconWidth(), getScale()), getPercentage(ii.getIconHeight(), getScale()));
+				BufferedImage imageTemp;
+				try
+				{
+					imageTemp = ImageIO.read(new File(file));
+					bi = resizeImage(ImageIO.read(new File(file)), getPercentage(imageTemp.getWidth(), getScale()), getPercentage(imageTemp.getHeight(), getScale()));				
+				}
+				catch(IOException e)
+				{
+					e.printStackTrace();
+				}
+
 			}
 			
 			if (rotate > 0)

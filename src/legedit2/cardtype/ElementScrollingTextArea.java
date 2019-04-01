@@ -1,5 +1,6 @@
 package legedit2.cardtype;
 
+import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.FontMetrics;
@@ -11,8 +12,9 @@ import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
 import java.awt.image.BufferedImageOp;
 import java.io.File;
+import java.io.IOException;
 import java.util.List;
-
+import javax.imageio.ImageIO;
 import javax.swing.*;
 
 import org.w3c.dom.Node;
@@ -417,12 +419,28 @@ public class ElementScrollingTextArea extends CustomElement {
 						BufferedImage bi2 = null;
 						if (bg.fullSize)
 						{
-							bi2 = resizeImage(new ImageIcon(file), getPercentage(CustomCardMaker.cardWidth,getScale()), getPercentage(CustomCardMaker.cardHeight,getScale()));
+							try
+							{
+								bi2 = resizeImage(ImageIO.read(new File(file)), getPercentage(CustomCardMaker.cardWidth,getScale()), getPercentage(CustomCardMaker.cardHeight,getScale()));				
+							}
+							catch(IOException e)
+							{
+								e.printStackTrace();
+							}
+
 						}
 						else
 						{
-							ImageIcon ii = new ImageIcon(file);
-							bi2 = resizeImage(new ImageIcon(file), (int)(getPercentage(ii.getIconWidth(),getScale()) * bg.zoom), (int)(getPercentage(ii.getIconHeight(),getScale()) * bg.zoom));
+							BufferedImage imageTemp;
+							try
+							{
+								imageTemp = ImageIO.read(new File(file));
+								bi2 = resizeImage(imageTemp, (int)(getPercentage(imageTemp.getWidth(),getScale()) * bg.zoom), (int)(getPercentage(imageTemp.getHeight(),getScale()) * bg.zoom));				
+							}
+							catch(IOException e)
+							{
+								e.printStackTrace();
+							}
 						}
 
 						if (rotate > 0)
@@ -441,7 +459,7 @@ public class ElementScrollingTextArea extends CustomElement {
 			}
 	    	
 	    	g.drawImage(bi, 0, directionY, null);
-	    	
+			
 	    	g2.dispose();
 		}
 	}

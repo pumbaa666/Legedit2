@@ -99,16 +99,14 @@ public class CustomElement implements Cloneable {
 	        return image;
 	}
 	
-	public BufferedImage resizeImage(ImageIcon imageIcon, int width, int height)
+	public BufferedImage resizeImage(BufferedImage bi, int width, int height)
 	{
 	        int type = BufferedImage.TYPE_INT_ARGB;
 	        
 	        BufferedImage image = new BufferedImage(width, height, type);
 	        Graphics2D g = getGraphics(image);
 	        
-	        g.drawImage(imageIcon.getImage(), 0, 0, width, height, 
-	        		0, 0, imageIcon.getIconWidth(), imageIcon.getIconHeight(), null);
-	        
+	        g.drawImage(new ImageIcon(bi).getImage(), 0, 0, width, height, 0, 0, bi.getWidth(), bi.getHeight(), null);
 	        g.dispose();
 	        
 	        return image;

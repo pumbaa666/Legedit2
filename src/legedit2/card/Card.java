@@ -18,7 +18,7 @@ public class Card extends LegeditItem implements Comparator<Card>, Comparable<Ca
 	private CardType template;
 	private String style;
 	
-	private ImageIcon imageSummary;
+	private ImageIcon imageSummary; // Jamais utilisé...
 	
 	private boolean changed;
 	

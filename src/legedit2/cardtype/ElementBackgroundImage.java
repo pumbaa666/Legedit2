@@ -1,19 +1,20 @@
 package legedit2.cardtype;
 
+import java.awt.BasicStroke;
+import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.geom.AffineTransform;
 import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
 import java.io.File;
-
+import java.io.IOException;
+import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
-
 import org.w3c.dom.Node;
-
 import legedit2.card.Card;
 import legedit2.imaging.CustomCardMaker;
 
@@ -63,12 +64,31 @@ public class ElementBackgroundImage extends CustomElement {
 				BufferedImage bi = null;
 				if (fullSize)
 				{
-					bi = resizeImage(new ImageIcon(file), getPercentage(CustomCardMaker.cardWidth,getScale()), getPercentage(CustomCardMaker.cardHeight,getScale()));				
+					try
+					{
+						bi = resizeImage(ImageIO.read(new File(file)), getPercentage(CustomCardMaker.cardWidth,getScale()), getPercentage(CustomCardMaker.cardHeight,getScale()));				
+					}
+					catch(IOException e)
+					{
+						e.printStackTrace();
+					}
+
 				}
 				else
 				{
-					ImageIcon ii = new ImageIcon(file);
-					bi = resizeImage(new ImageIcon(file), (int)(getPercentage(ii.getIconWidth(),getScale()) * zoom), (int)(getPercentage(ii.getIconHeight(),getScale()) * zoom));
+					BufferedImage imageTemp;
+					
+					try
+					{
+						imageTemp = ImageIO.read(new File(file));
+						g.drawImage(bi, 0, 0, null);
+						bi = resizeImage(imageTemp, (int)(getPercentage(imageTemp.getWidth(),getScale()) * zoom), (int)(getPercentage(imageTemp.getHeight(),getScale()) * zoom));
+					}
+					catch(IOException e)
+					{
+						e.printStackTrace();
+					}
+
 				}
 				
 				if (rotate > 0)
@@ -82,6 +102,10 @@ public class ElementBackgroundImage extends CustomElement {
 				}
 				
 				g.drawImage(bi, getPercentage(x + imageOffsetX,getScale()), getPercentage(y + imageOffsetY,getScale()), null);
+				
+//				g.setColor(Color.RED);
+//				g.setStroke(new BasicStroke(5f));
+//				g.drawLine(0, 0, 300, 300);
 			}
 		}
 	}

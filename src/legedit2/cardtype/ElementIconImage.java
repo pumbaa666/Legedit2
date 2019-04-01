@@ -7,7 +7,8 @@ import java.awt.geom.AffineTransform;
 import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
 import java.io.File;
-
+import java.io.IOException;
+import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
@@ -63,11 +64,30 @@ public class ElementIconImage extends CustomElement {
 			BufferedImage bi = null;
 			if (imageFilter == null)
 			{
-				bi = resizeImage(new ImageIcon(file), getPercentage(CustomCardMaker.cardWidth,getScale()), getPercentage(CustomCardMaker.cardHeight, getScale()));
+//				bi = resizeImage(new ImageIcon(file), getPercentage(CustomCardMaker.cardWidth,getScale()), getPercentage(CustomCardMaker.cardHeight, getScale()));
+				
+				try
+				{
+					bi = resizeImage(ImageIO.read(new File(file)), getPercentage(CustomCardMaker.cardWidth,getScale()), getPercentage(CustomCardMaker.cardHeight,getScale()));				
+				}
+				catch(IOException e)
+				{
+					e.printStackTrace();
+				}
+
 			}
 			if (imageFilter != null && imageFilter.equalsIgnoreCase("dualclass") && !getIconValue().getEnumName().equals("NONE"))
 			{
-				bi = resizeImage(new ImageIcon(getFadedBackground(new ImageIcon(file))), getPercentage(CustomCardMaker.cardWidth,getScale()), getPercentage(CustomCardMaker.cardHeight, getScale()));
+//				bi = resizeImage(new ImageIcon(getFadedBackground(new ImageIcon(file))), getPercentage(CustomCardMaker.cardWidth,getScale()), getPercentage(CustomCardMaker.cardHeight, getScale()));
+				try
+				{
+					bi = resizeImage(ImageIO.read(new File(file)), getPercentage(CustomCardMaker.cardWidth,getScale()), getPercentage(CustomCardMaker.cardHeight,getScale()));				
+				}
+				catch(IOException e)
+				{
+					e.printStackTrace();
+				}
+
 			}
 			
 			if (rotate > 0)
