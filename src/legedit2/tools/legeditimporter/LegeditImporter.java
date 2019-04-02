@@ -104,34 +104,20 @@ public class LegeditImporter {
 		LegeditFrame.refreshGUI();
 	}
 	
-	private void setValue(Card card, Class clazz, String name, Object value)
+	private void setValue(Card card, Class<?> clazz, String name, Object value)
 	{
 		if (card != null && card.getTemplate() != null)
 		{
 			for (CustomElement e : card.getTemplate().elements)
-			{
-				if (e.getClass().getSimpleName().equalsIgnoreCase(clazz.getSimpleName())
-						&& e.name.equalsIgnoreCase(name))
-				{
+				if (e.getClass().getSimpleName().equalsIgnoreCase(clazz.getSimpleName()) && e.name.equalsIgnoreCase(name))
 					if (e instanceof ElementCardName)
-					{
 						((ElementCardName)e).value = (String)value;
-					}
-				}
-			}
 			
 			for (Style style : card.getTemplate().getStyles()) {
 				for (CustomElement e : style.getElements())
-				{
-					if (e.getClass().getSimpleName().equalsIgnoreCase(clazz.getSimpleName())
-							&& e.name.equalsIgnoreCase(name))
-					{
+					if (e.getClass().getSimpleName().equalsIgnoreCase(clazz.getSimpleName()) && e.name.equalsIgnoreCase(name))
 						if (e instanceof ElementCardName)
-						{
 							((ElementCardName)e).value = (String)value;
-						}
-					}
-				}
 			}
 		}
 	}

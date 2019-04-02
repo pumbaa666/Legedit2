@@ -115,7 +115,6 @@ public class ElementTextArea extends CustomElement
 			x = startPoint.x;
 			y = startPoint.y + metrics.getAscent();
 			String[] sections = getValue().split("<h>");
-			boolean firstSection = true;
 			boolean lastWordWasBreak = false;
 			int lastWordBreakHeight = 0;
 			
@@ -171,7 +170,7 @@ public class ElementTextArea extends CustomElement
 				//System.out.println("header: " + headerStr + ", card: " + cardStr);
 				if(headerStr != null && !headerStr.isEmpty())
 				{
-					int headerHeight = (int)((double)g.getFontMetrics(fontHeader).getHeight() * 1.2d);
+					int headerHeight = (int)(g.getFontMetrics(fontHeader).getHeight() * 1.2);
 					if(lastWordWasBreak)
 					{
 						y -= lastWordBreakHeight;
@@ -273,7 +272,6 @@ public class ElementTextArea extends CustomElement
 							x = getXStart(y);
 						}
 						int modifiedY = y - i.getHeight() + metrics.getDescent();
-						//System.out.println(offsetRatio + " " + offset + " " + modifiedY + " " + i.getHeight() + " " + metrics.getHeight());
 						if(icon.isUnderlayMinimized())
 						{
 							drawUnderlay(i, g2, BufferedImage.TYPE_INT_ARGB, x, modifiedY, textIconBlurRadius,
@@ -284,21 +282,6 @@ public class ElementTextArea extends CustomElement
 					}
 				}
 			}
-			firstSection = false;
-			
-			//TODO Provide blur background option
-			/*
-			if (card.rarity.equals(CardRarity.RARE))
-			{
-				int padding = getPercentage(xEnd - xOrigin, rarePaddingRatio);
-				yOrigin = yOrigin + (metrics.getHeight() / 3);
-				BufferedImage blurBG = createRareBacking(xOrigin - padding, yOrigin - padding, xEnd + padding, y + padding);
-				blurBG = makeTransparent(blurBG, 0.85d);
-				blurBG = blurImage(blurBG, g2, rareBlurRadius);
-				
-				g.drawImage(blurBG, 0, 0, null);
-			}
-			*/
 		}
 		catch(Exception e)
 		{
@@ -318,181 +301,6 @@ public class ElementTextArea extends CustomElement
 		g2.dispose();
 	}
 
-	//	public void drawElementDeprecated(Graphics2D g)
-	//	{
-	//		if (getValue() != null)
-	//		{
-	//			BufferedImage bi = new BufferedImage(getPercentage(CustomCardMaker.cardWidth,getScale()), getPercentage(CustomCardMaker.cardHeight,getScale()), BufferedImage.TYPE_INT_ARGB);
-	//			Graphics2D g2 = getGraphics(bi);
-	//			g2 = setGraphicsHints(g2);
-	//			
-	//			polygon = null;
-	//			
-	//			if (debug)
-	//			{
-	//				g2.setColor(Color.BLACK);
-	//				g2.fillPolygon(getPolygon());
-	//			}
-	//			
-	//	    	g2.setColor(colour);
-	//	    	try
-	//	    	{
-	//	    		Font font = Font.createFont(Font.TRUETYPE_FONT, new File("legedit" + File.separator + "fonts" + File.separator + "Swiss 721 Light Condensed.ttf"));
-	//	    		font = font.deriveFont((float)getPercentage(textSize,getScale()));
-	//	    		if (fontName != null)
-	//	    		{
-	//	    			font = new Font(fontName, fontStyle, getPercentage(textSize,getScale()));
-	//	    		}
-	//	    		g2.setFont(font);
-	//	    		g2 = setGraphicsHints(g2);
-	//	    		
-	//	    		Font fontBold = Font.createFont(Font.TRUETYPE_FONT, new File("legedit" + File.separator + "fonts" + File.separator + "Swiss 721 Black Condensed.ttf"));
-	//	    		fontBold = fontBold.deriveFont((float)getPercentage(textSizeBold,getScale()));
-	//	    		if (fontName != null && fontNameBold == null)
-	//	    		{
-	//	    			fontBold = new Font(fontName, Font.BOLD, getPercentage(textSizeBold,getScale()));
-	//	    		}
-	//	    		if (fontNameBold != null)
-	//	    		{
-	//	    			fontBold = new Font(fontNameBold, Font.BOLD, getPercentage(textSizeBold,getScale()));
-	//	    		}
-	//	    		
-	//	    		FontMetrics metrics = g2.getFontMetrics(font);
-	//	    		
-	//	    		int x = -1;
-	//	    		int y = -1;
-	//	    		
-	//	    		//TODO other alignments
-	//	    		
-	//	    		Point startPoint = getStartPosition();
-	//	    		x = startPoint.x;
-	//	    		y = startPoint.y + metrics.getAscent();
-	//	    		
-	//	            
-	//	            List<WordDefinition> words = WordDefinition.getWordDefinitionList(getValue());
-	//
-	//	    		for (WordDefinition wd : words)
-	//	    		{
-	//	    			String s = wd.word;
-	//					String spaceChar = "";
-	//					if (wd.space)
-	//					{
-	//						spaceChar = " ";
-	//					}
-	//					
-	//	    			if (s.startsWith("<k>"))
-	//	    			{
-	//	    				g2.setFont(fontBold);
-	//	    				metrics = g2.getFontMetrics(fontBold);
-	//	    				s = s.replace("<k>", "");
-	//	    				g2 = setGraphicsHints(g2);
-	//	    				continue;
-	//	    			}
-	//	    			
-	//	    			if (s.startsWith("<r>"))
-	//	    			{
-	//	    				g2.setFont(font);
-	//	    				metrics = g2.getFontMetrics(font);
-	//	    				s = s.replace("<r>", "");
-	//	    				g2 = setGraphicsHints(g2);
-	//	    				continue;
-	//	    			}
-	//	    			
-	//	    			boolean gap = false;
-	//	    			if (s.equals("<g>"))
-	//	    			{
-	//	    				gap = true;
-	//	    			}
-	//	    			
-	//	    			Icon icon = isIcon(s);
-	//	    			if (gap == true)
-	//	    			{
-	//	    				y += g2.getFontMetrics(font).getHeight() + getPercentage(g2.getFontMetrics(font).getHeight(), textGapHeight);
-	//	    				x = getXStart(y);
-	//	    			}
-	//	    			else if (icon == null)
-	//	    			{
-	//	    				int stringLength = SwingUtilities.computeStringWidth(metrics, s);
-	//
-	//	    				if (!getPolygon().contains(x+stringLength, y))
-	//	    				{
-	//	    					//TODO Restore for rare backing?
-	//	    					/*
-	//	    					if (x > xEnd)
-	//	    					{
-	//	    						xEnd = x;
-	//	    					}
-	//	    					*/
-	//	    					y += g2.getFontMetrics(font).getHeight() + getPercentage(g2.getFontMetrics(font).getHeight(), textDefaultGapHeight);
-	//	    					x = getXStart(y);
-	//	    				}
-	//	    				g2.drawString(s + " ", x, y);
-	//	    				x += stringLength + SwingUtilities.computeStringWidth(metrics, spaceChar);
-	//	    			}
-	//	    			else if (icon != null)
-	//	    			{
-	//	    				BufferedImage i = getIconMaxHeight(icon, getPercentage(metrics.getHeight(), 1.2d));
-	//
-	//	    				if (!getPolygon().contains(x + i.getWidth(), y))
-	//	    				{
-	//	    					//TODO Restore for rare backing?
-	//	    					/*
-	//	    					if (x > xEnd)
-	//	    					{
-	//	    						xEnd = x;
-	//	    					}
-	//	    					*/
-	//	    					y += g2.getFontMetrics(font).getHeight() + getPercentage(g2.getFontMetrics(font).getHeight(), textDefaultGapHeight);
-	//	    					x = getXStart(y);
-	//	    				}
-	//	    				
-	//	    				int modifiedY = (int)(y - i.getHeight() + metrics.getDescent());
-	//	    				
-	//	    				//System.out.println(offsetRatio + " " + offset + " " + modifiedY + " " + i.getHeight() + " " + metrics.getHeight());
-	//	    				
-	//	    				if (icon.isUnderlayMinimized())
-	//	    				{
-	//	    					drawUnderlay(i, g2, BufferedImage.TYPE_INT_ARGB, x, modifiedY, textIconBlurRadius, textIconBlurDouble, expandTextIcon, Color.black);
-	//	    				}
-	//	    				g2.drawImage(i, x, modifiedY, null);
-	//	    				x += i.getWidth() + SwingUtilities.computeStringWidth(metrics, spaceChar);
-	//	    			}
-	//	    		}
-	//	    		
-	//	    		//TODO Provide blur background option
-	//	    		/*
-	//	    		if (card.rarity.equals(CardRarity.RARE))
-	//		    	{
-	//	    			int padding = getPercentage(xEnd - xOrigin, rarePaddingRatio);
-	//	    			yOrigin = yOrigin + (metrics.getHeight() / 3);
-	//		    		BufferedImage blurBG = createRareBacking(xOrigin - padding, yOrigin - padding, xEnd + padding, y + padding);
-	//		    		blurBG = makeTransparent(blurBG, 0.85d);
-	//		    		blurBG = blurImage(blurBG, g2, rareBlurRadius);
-	//		    		
-	//		    		g.drawImage(blurBG, 0, 0, null);
-	//		    	}
-	//		    	*/
-	//	    	}
-	//	    	catch (Exception e)
-	//	    	{
-	//	    		e.printStackTrace();
-	//	    	}
-	//
-	//	    	if (rotate > 0)
-	//			{
-	//				double rotationRequired = Math.toRadians (rotate);
-	//				double locationX = bi.getWidth() / 2;
-	//				double locationY = bi.getHeight() / 2;
-	//				AffineTransform tx = AffineTransform.getRotateInstance(rotationRequired, locationX, locationY);
-	//				AffineTransformOp op = new AffineTransformOp(tx, AffineTransformOp.TYPE_BILINEAR);
-	//				bi = op.filter(bi, null);
-	//			}
-	//	    	
-	//	    	g.drawImage(bi, 0, 0, null);
-	//	    	
-	//	    	g2.dispose();
-	//		}
-	//	}
 	public Polygon getPolygon()
 	{
 		if(polygon == null)
@@ -510,7 +318,6 @@ public class ElementTextArea extends CustomElement
 				ypoints[i] = getPercentage(Integer.parseInt(ysplit[i].trim()), getScale());
 			}
 			polygon = new Polygon(xpoints, ypoints, xpoints.length);
-			//System.out.println(polygon);
 		}
 		return polygon;
 	}
@@ -564,11 +371,13 @@ public class ElementTextArea extends CustomElement
 		return null;
 	}
 
+    @Override
 	public String generateOutputString()
 	{
 		return generateOutputString(false);
 	}
 
+    @Override
 	public String generateOutputString(boolean fullExport)
 	{
 		String str = "";
@@ -660,8 +469,6 @@ public class ElementTextArea extends CustomElement
 	private void drawHeader(Graphics2D g, String header, Font font, Color color, int y, int height, int blurRadius,
 			HeaderIcon headerIcon)
 	{
-		if(true)
-			return;
 		BufferedImage bi1 = new BufferedImage(getPercentage(CustomCardMaker.cardWidth, getScale()),
 				getPercentage(CustomCardMaker.cardHeight, getScale()), BufferedImage.TYPE_INT_ARGB);
 		Graphics2D g2 = getGraphics(bi1);
@@ -696,7 +503,7 @@ public class ElementTextArea extends CustomElement
 		if(headerIcon != null && headerIcon.value != null)
 		{
 			Font originalFont = font;
-			font = font.deriveFont((float)(g.getFontMetrics(originalFont).getHeight() * 1.6f));
+			font = font.deriveFont(g.getFontMetrics(originalFont).getHeight() * 1.6f);
 			g3.setFont(font);
 			g3 = setGraphicsHints(g3);
 			int stringLength = SwingUtilities.computeStringWidth(g.getFontMetrics(font),
@@ -716,7 +523,7 @@ public class ElementTextArea extends CustomElement
 		if(headerIcon != null && headerIcon.value != null)
 		{
 			Font originalFont = font;
-			font = font.deriveFont((float)(g.getFontMetrics(originalFont).getHeight() * 1.6f));
+			font = font.deriveFont(g.getFontMetrics(originalFont).getHeight() * 1.6f);
 			g3.setFont(font);
 			g3 = setGraphicsHints(g3);
 			int stringLength = SwingUtilities.computeStringWidth(g.getFontMetrics(font),
@@ -759,9 +566,7 @@ public class ElementTextArea extends CustomElement
 			}
 		}
 		else
-		{
 			g.drawImage(blackout, 0, 0, null);
-		}
 	}
 
 	private BufferedImage blackoutImage(BufferedImage image)
@@ -773,11 +578,8 @@ public class ElementTextArea extends CustomElement
 			for(int yy = 0; yy < height; yy++)
 			{
 				Color originalColor = new Color(image.getRGB(xx, yy), true);
-				//System.out.println(xx + "|" + yy + " color: " + originalColor.toString() + "alpha: " + originalColor.getAlpha());
 				if(originalColor.getAlpha() > 0)
-				{
 					image.setRGB(xx, yy, Color.BLACK.getRGB());
-				}
 			}
 		}
 		return image;
@@ -885,6 +687,7 @@ public class ElementTextArea extends CustomElement
 		return bi;
 	}
 
+    @Override
 	public void loadValues(Node node, Card card)
 	{
 		if(!node.getNodeName().equals("textarea"))
@@ -915,6 +718,7 @@ public class ElementTextArea extends CustomElement
 		}
 	}
 
+    @Override
 	public String getDifferenceXML()
 	{
 		String str = "";

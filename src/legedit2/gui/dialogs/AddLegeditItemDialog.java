@@ -9,8 +9,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.DefaultComboBoxModel;
 import javax.swing.DefaultListModel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -24,8 +22,6 @@ import javax.swing.JToolBar;
 import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-
-import legedit2.card.Card;
 import legedit2.cardgroup.CardGroup;
 import legedit2.cardgroup.CardGroupListCellRenderer;
 import legedit2.cardtype.CardType;

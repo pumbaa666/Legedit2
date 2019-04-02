@@ -55,6 +55,7 @@ public class ElementCardName extends CustomElement implements Cloneable
 	private JTextField cardNameField;
 	private JTextField cardSubNameField;
 
+    @Override
 	public void drawElement(Graphics2D g)
 	{
 		if(getValue() != null)
@@ -279,11 +280,13 @@ public class ElementCardName extends CustomElement implements Cloneable
 		return bi;
 	}
 
+    @Override
 	public String generateOutputString()
 	{
 		return generateOutputString(false);
 	}
 
+    @Override
 	public String generateOutputString(boolean fullExport)
 	{
 		String str = "";
@@ -352,6 +355,7 @@ public class ElementCardName extends CustomElement implements Cloneable
 		}
 	}
 
+    @Override
 	public String getDifferenceXML()
 	{
 		String str = "";
@@ -363,6 +367,7 @@ public class ElementCardName extends CustomElement implements Cloneable
 		return str;
 	}
 
+    @Override
 	public void loadValues(Node node, Card card)
 	{
 		if(!node.getNodeName().equals("cardname"))

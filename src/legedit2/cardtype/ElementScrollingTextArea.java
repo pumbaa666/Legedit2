@@ -1,12 +1,9 @@
 package legedit2.cardtype;
 
-import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics2D;
-import java.awt.Point;
-import java.awt.Polygon;
 import java.awt.geom.AffineTransform;
 import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
@@ -15,10 +12,12 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import javax.imageio.ImageIO;
-import javax.swing.*;
-
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.SwingUtilities;
 import org.w3c.dom.Node;
-
 import legedit2.card.Card;
 import legedit2.definitions.Icon;
 import legedit2.imaging.BoxBlurFilter;
@@ -73,12 +72,12 @@ public class ElementScrollingTextArea extends CustomElement {
 	public String getValue()
 	{
 		if (value != null)
-		{
 			return value;
-		}
+
 		return defaultValue;
 	}
 	
+    @Override
 	public void drawElement(Graphics2D g)
 	{
 		if (getValue() != null)
@@ -171,20 +170,17 @@ public class ElementScrollingTextArea extends CustomElement {
 
 					if (headerText != null && !headerText.isEmpty())
 					{
-						int headerHeight = (int)((double)g.getFontMetrics(fontHeader).getHeight() * 1.3d);
+						int headerHeight = (int)(g.getFontMetrics(fontHeader).getHeight() * 1.3d);
 						drawHeader(g2, headerText.toUpperCase(), fontHeader, headerColour, y - (headerHeight*2) + (int)(headerHeight*0.1d), headerHeight, getPercentage(CustomCardMaker.cardWidth, 0.2d), headerIcon);
 					}
 				}
 	    		
 	    		String[] sections = getValue().split("<h>");
-	    		boolean firstSection = true;
 	    		boolean lastWordWasBreak = false;
 	    		int lastWordBreakHeight = 0;
 	    		
 	    		for (String sectionString : sections)
 	    		{
-	    			//System.out.println("Section: " + sectionString);
-	    			
 	    			if (!sectionString.isEmpty())
 	    			{
 	    				String headerStr = "";
@@ -219,43 +215,26 @@ public class ElementScrollingTextArea extends CustomElement {
 		    						if (i.toUpperCase().startsWith("VALUE="))
 		    						{
 		    							if (headerIcon == null)
-		    							{
 		    								headerIcon = new HeaderIcon();
-		    							}
 		    							headerIcon.value = i.toUpperCase().trim().replace("VALUE=", "");
 		    						}
 		    					}
 		    				}
 		    				
 		    				if (headerSplit.length > 1)
-		    				{
 		    					cardStr = headerSplit[1];
-		    				}
 		    				else
-		    				{
 		    					cardStr = "";
-		    				}
 		    			}
-		    			
-		    			//System.out.println("header: " + headerStr + ", card: " + cardStr);
 		    			
 		    			if (headerStr != null && !headerStr.isEmpty())
 		    			{
-		    				int headerHeight = (int)((double)g.getFontMetrics(fontHeader).getHeight() * 1.2d);
+		    				int headerHeight = (int)(g.getFontMetrics(fontHeader).getHeight() * 1.2);
 		    				if (lastWordWasBreak)
-		    				{
 		    					y -= lastWordBreakHeight;
-		    				}
 			    			drawHeader(g2, headerStr.toUpperCase(), fontHeader, /*card.cardType.getBgColor()*/ Color.red, y, headerHeight, getPercentage(CustomCardMaker.cardWidth, 0.2d), headerIcon);
 				    		y += headerHeight + metrics.getHeight() + getPercentage(metrics.getHeight(), 0.5d);
 		    			}
-//		    			else
-//		    			{
-//		    				if (firstSection)
-//		    				{
-//		    					y += 35;
-//		    				}
-//		    			}
 		    			
 		    			List<WordDefinition> words = WordDefinition.getWordDefinitionList(getValue());
 
@@ -304,13 +283,6 @@ public class ElementScrollingTextArea extends CustomElement {
 
 			    				if (x + stringLength > getPercentage(endX, getScale()))
 			    				{
-			    					//TODO Restore for rare backing?
-			    					/*
-			    					if (x > xEnd)
-			    					{
-			    						xEnd = x;
-			    					}
-			    					*/
 			    					y += g2.getFontMetrics(font).getHeight() + getPercentage(g2.getFontMetrics(font).getHeight(), textDefaultGapHeight);
 			    					x = getPercentage(startX, getScale());
 			    				}
@@ -323,50 +295,20 @@ public class ElementScrollingTextArea extends CustomElement {
 
 			    				if (x + i.getWidth() > getPercentage(endX, getScale()))
 			    				{
-			    					//TODO Restore for rare backing?
-			    					/*
-			    					if (x > xEnd)
-			    					{
-			    						xEnd = x;
-			    					}
-			    					*/
 			    					y += g2.getFontMetrics(font).getHeight() + getPercentage(g2.getFontMetrics(font).getHeight(), textDefaultGapHeight);
 			    					x = getPercentage(startX, getScale());
 			    				}
 			    				
-			    				int modifiedY = (int)(y - i.getHeight() + metrics.getDescent());
-			    				
-			    				//System.out.println(offsetRatio + " " + offset + " " + modifiedY + " " + i.getHeight() + " " + metrics.getHeight());
+			    				int modifiedY = y - i.getHeight() + metrics.getDescent();
 			    				
 			    				if (icon.isUnderlayMinimized())
-			    				{
 			    					drawUnderlay(i, g2, BufferedImage.TYPE_INT_ARGB, x, modifiedY, textIconBlurRadius, textIconBlurDouble, expandTextIcon, Color.black);
-			    				}
 			    				g2.drawImage(i, x, modifiedY, null);
 			    				x += i.getWidth() + SwingUtilities.computeStringWidth(metrics, spaceChar);
 			    			}
 			    		}
 	    			}
-		    			
-		    		firstSection = false;
 		    	}
-	    		
-	            
-	            
-	    		
-	    		//TODO Provide blur background option
-	    		/*
-	    		if (card.rarity.equals(CardRarity.RARE))
-		    	{
-	    			int padding = getPercentage(xEnd - xOrigin, rarePaddingRatio);
-	    			yOrigin = yOrigin + (metrics.getHeight() / 3);
-		    		BufferedImage blurBG = createRareBacking(xOrigin - padding, yOrigin - padding, xEnd + padding, y + padding);
-		    		blurBG = makeTransparent(blurBG, 0.85d);
-		    		blurBG = blurImage(blurBG, g2, rareBlurRadius);
-		    		
-		    		g.drawImage(blurBG, 0, 0, null);
-		    	}
-		    	*/
 	    	}
 	    	catch (Exception e)
 	    	{
@@ -392,9 +334,7 @@ public class ElementScrollingTextArea extends CustomElement {
 						- g2.getFontMetrics(font).getHeight() - getPercentage(g2.getFontMetrics(font).getHeight(), textGapHeight);
 			}
 			else
-			{
 				directionY = 0;
-			}
 
 			if (bg != null)
 			{
@@ -406,10 +346,7 @@ public class ElementScrollingTextArea extends CustomElement {
 							+ File.separator + bg.path;
 				}
 				else
-				{
 					file = bg.path;
-				}
-
 
 				if (file != null)
 				{
@@ -464,11 +401,13 @@ public class ElementScrollingTextArea extends CustomElement {
 		}
 	}
 	
+    @Override
 	public String generateOutputString()
 	{
 		return generateOutputString(false);
 	}
 	
+    @Override
 	public String generateOutputString(boolean fullExport)
 	{
 		String str = "";
@@ -592,7 +531,7 @@ public class ElementScrollingTextArea extends CustomElement {
 		{
 			Font originalFont = font;
 			
-			font = font.deriveFont((float)(g.getFontMetrics(originalFont).getHeight() * 1.6f));
+			font = font.deriveFont(g.getFontMetrics(originalFont).getHeight() * 1.6f);
 			g3.setFont(font);
 			
 			g3 = setGraphicsHints(g3);
@@ -614,7 +553,7 @@ public class ElementScrollingTextArea extends CustomElement {
 		{
 			Font originalFont = font;
 			
-			font = font.deriveFont((float)(g.getFontMetrics(originalFont).getHeight() * 1.6f));
+			font = font.deriveFont(g.getFontMetrics(originalFont).getHeight() * 1.6f);
 			g3.setFont(font);
 			g3 = setGraphicsHints(g3);
 			int stringLength = SwingUtilities.computeStringWidth(g.getFontMetrics(font), headerIcon.value.toUpperCase());
@@ -730,6 +669,7 @@ public class ElementScrollingTextArea extends CustomElement {
 		return bi;
 	}
 	
+    @Override
 	public void loadValues(Node node, Card card)
 	{
 		if (!node.getNodeName().equals("scrollingtextarea"))
@@ -765,6 +705,7 @@ public class ElementScrollingTextArea extends CustomElement {
 		}
 	}
 	
+    @Override
 	public String getDifferenceXML()
 	{
 		String str = "";

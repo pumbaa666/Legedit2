@@ -5,12 +5,8 @@ import java.awt.Graphics2D;
 import java.awt.geom.AffineTransform;
 import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
-
 import javax.swing.JComboBox;
-import javax.swing.JTextField;
-
 import org.w3c.dom.Node;
-
 import legedit2.card.Card;
 import legedit2.definitions.Icon;
 import legedit2.definitions.Icon.ICON_TYPE;
@@ -37,6 +33,7 @@ public class ElementIcon extends CustomElement {
 	
 	private JComboBox<Icon> iconCombobox;
 	
+    @Override
 	public void drawElement(Graphics2D g)
 	{
 		if (visible && getIconValue().getImagePath() != null)
@@ -67,45 +64,35 @@ public class ElementIcon extends CustomElement {
 	public Icon getIconValue()
 	{
 		if (valueFrom != null)
-		{
 			for (CustomElement el : template.elements)
-			{
 				if (el.name.equalsIgnoreCase(valueFrom))
 				{
 					if (el instanceof ElementIcon)
-					{
 						return ((ElementIcon)el).getIconValue();
-					}
 					if (el instanceof ElementIconImage)
-					{
 						return ((ElementIconImage)el).getIconValue();
-					}
 				}
-			}
-		}
-		if (value != null)
-		{
+		
+		if(value != null)
 			return value;
-		}
-		if (defaultValue != null)
-		{
+		if(defaultValue != null)
 			return defaultValue;
-		}
+		
 		return Icon.valueOf("NONE");
 	}
 	
+    @Override
 	public String generateOutputString()
 	{
 		return generateOutputString(false);
 	}
 	
+    @Override
 	public String generateOutputString(boolean fullExport)
 	{
 		String str = "";
 		if (value != null)
-		{
 			str += "CUSTOMVALUE;" + name + ";value;" + value + "\n";
-		}
 		
 		str += "CUSTOMVALUE;" + name + ";visible;" + visible + "\n";
 		
@@ -129,6 +116,7 @@ public class ElementIcon extends CustomElement {
 		}
 	}
 	
+    @Override
 	public void loadValues(Node node, Card card)
 	{
 		if (!node.getNodeName().equals("icon"))
@@ -142,6 +130,7 @@ public class ElementIcon extends CustomElement {
 		}
 	}
 	
+    @Override
 	public String getDifferenceXML()
 	{
 		String str = "";

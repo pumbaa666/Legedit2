@@ -128,11 +128,13 @@ public class ElementText extends CustomElement {
 		return getValue();
 	}
 	
+    @Override
 	public String generateOutputString()
 	{
 		return generateOutputString(false);
 	}
 	
+    @Override
 	public String generateOutputString(boolean fullExport)
 	{
 		String str = "";
@@ -163,6 +165,7 @@ public class ElementText extends CustomElement {
 		}
 	}
 	
+    @Override
 	public void loadValues(Node node, Card card)
 	{
 		if (!node.getNodeName().equals("text"))
@@ -177,6 +180,7 @@ public class ElementText extends CustomElement {
 		}
 	}
 	
+    @Override
 	public String getDifferenceXML()
 	{
 		String str = "";

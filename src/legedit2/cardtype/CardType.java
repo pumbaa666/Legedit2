@@ -39,6 +39,7 @@ public class CardType extends ItemType implements Cloneable {
 	
 	private Style style;
 	
+	@Override
 	public String getName()
 	{
 		return templateName;
@@ -1331,15 +1332,12 @@ public class CardType extends ItemType implements Cloneable {
 		return null;
 	}
 	
-	public CustomElement findElementByType(Class clazz)
+	public CustomElement findElementByType(Class<?> clazz)
 	{
 		for (CustomElement ce : elements)
-		{
 			if (ce.getClass().getSimpleName().equalsIgnoreCase(clazz.getSimpleName()))
-			{
 				return ce;
-			}
-		}
+		
 		return null;
 	}
 }

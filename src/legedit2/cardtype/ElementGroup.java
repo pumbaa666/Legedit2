@@ -5,11 +5,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-
 import org.w3c.dom.Node;
-
 import legedit2.card.Card;
-import legedit2.definitions.Icon;
 
 public class ElementGroup extends CustomElement {
 
@@ -24,6 +21,7 @@ public class ElementGroup extends CustomElement {
 		this.elements = elements;
 	}
 	
+    @Override
 	public void setScale(double scale) {
 		super.setScale(scale);
 		
@@ -33,6 +31,7 @@ public class ElementGroup extends CustomElement {
 		}
 	}
 	
+    @Override
 	public void drawElement(Graphics2D g)
 	{
 		for (CustomElement e : elements)
@@ -41,6 +40,7 @@ public class ElementGroup extends CustomElement {
 		}
 	}
 	
+    @Override
 	public void updateCardValues()
 	{
 		for (CustomElement e : elements)
@@ -49,6 +49,7 @@ public class ElementGroup extends CustomElement {
 		}
 	}
 	
+    @Override
 	public void loadValues(Node node, Card card)
 	{
 		if (!node.getNodeName().equals("elementgroup"))
@@ -80,6 +81,7 @@ public class ElementGroup extends CustomElement {
 		}
 	}
 	
+    @Override
 	public String getDifferenceXML()
 	{
 		String str = "";
@@ -104,6 +106,7 @@ public class ElementGroup extends CustomElement {
 		this.elementsHash = elementsHash;
 	}
 	
+    @Override
 	public ElementGroup getCopy(CardType template)
 	{
 		try {

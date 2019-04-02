@@ -79,13 +79,9 @@ public class ProjectHelper {
 	public static void deleteLegeditItem(LegeditItem item)
 	{
 		if (item instanceof Deck)
-		{
-			getDecks().remove((Deck)item);
-		}
+			getDecks().remove(item);
 		if (item instanceof Card)
-		{
-			getCards().remove((Card)item);
-		}
+			getCards().remove(item);
 	}
 	
 	public static void loadProject(File inputFile)

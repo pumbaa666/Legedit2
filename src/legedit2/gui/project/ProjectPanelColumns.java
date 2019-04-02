@@ -2,12 +2,8 @@ package legedit2.gui.project;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
-
-import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
-
-import legedit2.card.Card;
 import legedit2.gui.editor.CardEditorPanel;
 
 public class ProjectPanelColumns extends ProjectPanel {

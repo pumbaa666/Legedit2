@@ -56,6 +56,7 @@ public final class Icon implements Comparator<Icon>, Comparable<Icon> {
 		return type;
 	}
 	
+	@Override
 	public String toString()
 	{
 		return getEnumName();

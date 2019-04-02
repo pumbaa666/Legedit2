@@ -443,21 +443,14 @@ public class ManageIconPanel extends JPanel implements ActionListener, ItemListe
 	    	destFile = new File(destFile.getAbsolutePath());
 	    }
 
-	    FileChannel source = null;
-	    FileChannel destination = null;
-
-	    try {
-	        source = new FileInputStream(sourceFile).getChannel();
-	        destination = new FileOutputStream(destFile).getChannel();
-	        destination.transferFrom(source, 0, source.size());
-	    }
-	    finally {
-	        if(source != null) {
-	            source.close();
-	        }
-	        if(destination != null) {
-	            destination.close();
-	        }
-	    }
+		try (
+				FileInputStream fis = new FileInputStream(sourceFile);
+				FileOutputStream fos = new FileOutputStream(destFile);
+			)
+		{
+			FileChannel source = fis.getChannel();
+			FileChannel destination = fos.getChannel();
+			destination.transferFrom(source, 0, source.size());
+		}
 	}
 }

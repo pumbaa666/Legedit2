@@ -174,7 +174,6 @@ setLayout(new GridBagLayout());
 		
 		if (selectedDeck != null)
 		{
-			Style selected = null;
 			DeckType dt = selectedDeck.getTemplate();
 			List<String> usedStyles = new ArrayList<>(); 
 			for (CardType ct : dt.getCardTypes())
@@ -198,28 +197,19 @@ setLayout(new GridBagLayout());
 	private boolean doStylesExist()
 	{
 		if (selectedDeck != null)
-		{
 			for (Card c : selectedDeck.getCards())
-			{
 				if (c.getTemplate().getStyles().size() > 0)
-				{
 					return true;
-				}
-			}			
-		}
 		
 		return false;
 	}
 
-	@SuppressWarnings("rawtypes")
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (selectedDeck != null)
 		{
 			if (selectedDeck.getTemplate().getNameEditable())
-			{
 				selectedDeck.setName(nameField.getText());
-			}
 			
 			for (Card c : selectedDeck.getCards())
 			{
@@ -231,20 +221,18 @@ setLayout(new GridBagLayout());
 						{
 							if (el instanceof ElementIcon && attr.getType().equalsIgnoreCase("icon"))
 							{
-								JComboBox box = null;
+								JComboBox<?> box = null;
 								for (Component comp : this.getComponents())
 								{
 									if (comp instanceof JComboBox && comp.getName() != null && comp.getName().equals("icondropdown_"+attr.getName()))
 									{
-										box = (JComboBox)comp;
+										box = (JComboBox<?>)comp;
 										break;
 									}
 								}
 								
 								if (box != null)
-								{
 									((ElementIcon)el).value = (Icon)box.getSelectedItem();
-								}
 							}
 						}
 					}					
@@ -260,12 +248,12 @@ setLayout(new GridBagLayout());
 							{
 								if (el instanceof ElementIcon && attr.getType().equalsIgnoreCase("icon"))
 								{
-									JComboBox box = null;
+									JComboBox<?> box = null;
 									for (Component comp : this.getComponents())
 									{
 										if (comp instanceof JComboBox && comp.getName() != null && comp.getName().equals("icondropdown_"+attr.getName()))
 										{
-											box = (JComboBox)comp;
+											box = (JComboBox<?>)comp;
 											break;
 										}
 									}

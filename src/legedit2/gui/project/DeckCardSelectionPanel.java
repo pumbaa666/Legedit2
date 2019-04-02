@@ -8,11 +8,8 @@ import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-
 import javax.swing.DefaultListModel;
 import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -21,9 +18,7 @@ import javax.swing.JToolBar;
 import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-
 import legedit2.card.Card;
-import legedit2.cardgroup.CardGroup;
 import legedit2.deck.Deck;
 import legedit2.definitions.ItemType;
 import legedit2.definitions.LegeditItem;
@@ -36,7 +31,6 @@ public class DeckCardSelectionPanel extends JPanel implements ActionListener, It
 
 	private static final long serialVersionUID = 2441581697840723279L;
 	
-	private JComboBox<CardGroup> cardGroupFilter;
 	private JButton newLegeditItem = new JButton(" + ");
 	private JButton deleteLegeditItem = new JButton(" - ");
 	

@@ -1,6 +1,5 @@
 package legedit2.cardtype;
 
-import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.geom.AffineTransform;
 import java.awt.image.AffineTransformOp;
@@ -8,15 +7,11 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JLabel;
-
 import org.w3c.dom.Node;
-
 import legedit2.card.Card;
-import legedit2.definitions.Icon;
 import legedit2.imaging.CustomCardMaker;
 
 public class ElementImage extends CustomElement {
@@ -39,6 +34,7 @@ public class ElementImage extends CustomElement {
 	private JButton browseButton;
 	private JFileChooser chooser;
 	
+    @Override
 	public void drawElement(Graphics2D g)
 	{
 		String file = path;
@@ -97,11 +93,13 @@ public class ElementImage extends CustomElement {
 		}
 	}
 	
+    @Override
 	public String generateOutputString()
 	{
 		return generateOutputString(false);
 	}
 	
+    @Override
 	public String generateOutputString(boolean fullExport)
 	{
 		String str = "";
@@ -119,6 +117,7 @@ public class ElementImage extends CustomElement {
 		return str;
 	}
 	
+    @Override
 	public void loadValues(Node node, Card card)
 	{
 		if (!node.getNodeName().equals("image"))
@@ -147,6 +146,7 @@ public class ElementImage extends CustomElement {
 		}
 	}
 	
+    @Override
 	public String getDifferenceXML()
 	{
 		String str = "";

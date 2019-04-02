@@ -24,11 +24,13 @@ public class ElementProperty extends CustomElement {
 		return defaultValue;
 	}
 	
+    @Override
 	public String generateOutputString()
 	{
 		return generateOutputString(false);
 	}
 	
+    @Override
 	public String generateOutputString(boolean fullExport)
 	{
 		String str = "";

@@ -1,11 +1,8 @@
 package legedit2.gui.editor;
 
 import java.awt.BorderLayout;
-
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
-
-import legedit2.card.Card;
 import legedit2.cardtype.CardType;
 import legedit2.gui.project.LegeditItemPreviewPanel;
 
