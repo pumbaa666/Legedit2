@@ -20,7 +20,7 @@
 <property name="Number in Deck" value="32" />
 <styles>
 <style name="Villains">
-<cardname name="Card Name" value="Lumos" subnameValue=""  textsize="48" subnamesize="34" />
+<cardname name="Card Name" value="Lumos" subnameValue="HERO"  textsize="48" subnamesize="34" />
 <icon name="Team" value="NONE" />
 <icon name="Power" value="NONE" />
 </style>
@@ -45,7 +45,7 @@
 <property name="Number in Deck" value="16" />
 <styles>
 <style name="Villains">
-<cardname name="Card Name" value="Expelliarmus" subnameValue=""  textsize="48" subnamesize="34" />
+<cardname name="Card Name" value="Expelliarmus" subnameValue="HERO"  textsize="48" subnamesize="34" />
 <icon name="Team" value="NONE" />
 <icon name="Power" value="NONE" />
 </style>
@@ -1306,11 +1306,11 @@
 <icon name="Victory Icon" value="VICTORY" />
 <text name="Victory Value" value="0" />
 </elementgroup>
-<textarea name="Card Text" value="Payez 6&lt;RECRUIT&gt; pour aquerir cette fourniture.&lt;g&gt; &lt;k&gt;Zone de combat &lt;r&gt; : Détruisez cette carte. &lt;g&gt;&lt;g&gt; &lt;k&gt;Fournigure&lt;r&gt;&lt;g&gt;+1&lt;ATTACK&gt; chaque tour."   textsize="30" textsizebold="34" />
+<textarea name="Card Text" value="&lt;k&gt;Fourniture&lt;r&gt;&lt;g&gt;+1&lt;ATTACK&gt; chaque tour.&lt;g&gt;&lt;g&gt;Payez 6&lt;RECRUIT&gt; pour aquerir cette fourniture.&lt;g&gt; &lt;k&gt;Zone de combat &lt;r&gt; : Détruisez cette carte."   textsize="30" textsizebold="34" />
 <property name="Number in Deck" value="1" />
 <styles>
 <style name="Villains">
-<cardname name="Card Name" value="Miroir du Rised" subnameValue="Objectif 2"  textsize="48" subnamesize="34" />
+<cardname name="Card Name" value="Miroir du Rised" subnameValue=""  textsize="48" subnamesize="34" />
 <icon name="Team" value="ECOLE_DES_SORCIERS" />
 </style>
 <style name="Base Set">
