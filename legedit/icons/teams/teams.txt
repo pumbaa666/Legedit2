@@ -1,5 +1,7 @@
-ECOLE_DES_SORCIERS,eds.png,false
-CHAMBRE_DES_SECRETS,cds.png,false
-PRISONIER_D_AZKABAN,pa.png,false
-COUPE_DE_FEU,cdf.png,false
-ORDRE_DU_PHENIX,odp.png,false
+ECOLE_DES_SORCIERS,1-eds_test_blanc.png,false
+CHAMBRE_DES_SECRETS,2-cds_color.png,false
+PRISONIER_D_AZKABAN,3-pa_color.png,false
+COUPE_DE_FEU,4-cdf_color.png,false
+ORDRE_DU_PHENIX,5-odp_color.png,false
+PRINCE_DE_SANG_MELE,6-pdsm_color.png,false
+RELIQUE_DE_LA_MORT,7-rdlm_color.png,false

@@ -94,7 +94,7 @@ public class ElementText extends CustomElement {
 	    	
 	    	g2.drawString(getValueForDraw(), newx, yModified);
 
-	    	if (rotate > 0)
+	    	if (rotate != 0)
 			{
 				double rotationRequired = Math.toRadians (rotate);
 				double locationX = bi.getWidth() / 2;

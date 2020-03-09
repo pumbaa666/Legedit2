@@ -1,0 +1,2035 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml>
+
+<legedititems>
+<deck template="starter_deck" name="starter deck">
+
+<template>
+</template>
+
+<cards>
+<card template="starter_agent">
+<template>
+<bgimage name="Image" path="./card_pictures/01-starter/1-lumos.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Recruit" visible="true">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="1" />
+</elementgroup>
+<text name="Cost Value" value="0" />
+<property name="Number in Deck" value="32" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Lumos" subnameValue=""  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="NONE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="HERO"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="starter_commander">
+<template>
+<bgimage name="Image" path="./card_pictures/01-starter/2-expelliarmus.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Attack" visible="true">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="1" />
+</elementgroup>
+<text name="Cost Value" value="0" />
+<property name="Number in Deck" value="16" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Expelliarmus" subnameValue=""  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="NONE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="HERO"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+</cards>
+
+</deck>
+
+
+
+<deck template="hero" name="Harry Potter">
+
+<template>
+</template>
+
+<cards>
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/02-harry/1-coffre_713.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="3" />
+<elementgroup name="Recruit" visible="true">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="2" />
+</elementgroup>
+<elementgroup name="Attack" visible="false">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="0" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="+2 &lt;CDT&gt;"   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="5" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Coffre #713" subnameValue="Harry Potter"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="CONNAISSANCE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Coffre #713" subnameValue="Harry Potter"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="CONNAISSANCE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/02-harry/2-donne_ca_malfoy.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="4" />
+<elementgroup name="Recruit" visible="false">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="0" />
+</elementgroup>
+<elementgroup name="Attack" visible="true">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="2*" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;SORTILEGE&gt; : +1&lt;ATTACK&gt; &lt;g&gt; Faites tourner la coupe des 4 maisons. L’effet lié la nouvelle maison est à nouveau actif."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="5" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Donne-moi ca Malfoy !" subnameValue="Harry Potter"  textsize="45" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="COURAGE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Donne-moi ça Malfoy !" subnameValue="Harry Potter"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="COURAGE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/02-harry/3-fais_en_bon_usage.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="6" />
+<elementgroup name="Recruit" visible="false">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="0" />
+</elementgroup>
+<elementgroup name="Attack" visible="true">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="2" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="Vous pouvez détruire une carte de votre main ou de votre défausse. &lt;g&gt; Chaque autre joueur peut révéler une carte &lt;LOYAUTE&gt; pour copier cet effet."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="3" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Fais en bon usage" subnameValue="Harry Potter"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="ASTUCE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Fais en bon usage" subnameValue="Harry Potter"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="ASTUCE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/02-harry/4-reduit_en_poussiere.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="8" />
+<elementgroup name="Recruit" visible="false">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="0" />
+</elementgroup>
+<elementgroup name="Attack" visible="true">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="3" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="Les ennemis ayant au moins 7&lt;ATTACK&gt; ont -2&lt;ATTACK&gt; ce tour. &lt;g&gt; Pour chaque ennemi vaincu à ce tour : +1 &lt;MORAL&gt;"   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Reduit en poussiere" subnameValue="Harry Potter"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="SORTILEGE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Réduit en poussière" subnameValue="Harry Potter"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="SORTILEGE" />
+</style>
+</styles>
+</template>
+</card>
+
+</cards>
+
+</deck>
+
+
+
+<deck template="hero" name="Hermione Granger">
+
+<template>
+</template>
+
+<cards>
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/03-hermione/1-il_garde_qqch_b.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="4" />
+<elementgroup name="Recruit" visible="true">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="1" />
+</elementgroup>
+<elementgroup name="Attack" visible="true">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="1" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="Regardez une carte de &lt;i&gt;Poudlard &lt;r&gt;  sans la révéler. Vous pouvez scanner cette carte pour    1&lt;ATTACK&gt; de moins."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="5" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Il garde quelque chose..." subnameValue="Hermione Granger"  textsize="38" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="ASTUCE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Il garde quelque chose..." subnameValue="Hermione Granger"  textsize="38" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="ASTUCE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/03-hermione/2-premiere_de_classe.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="4" />
+<elementgroup name="Recruit" visible="true">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="2" />
+</elementgroup>
+<elementgroup name="Attack" visible="false">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="0" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="Révélez la première carte de votre deck. &lt;g&gt; Si sont coût est supérieur à zéro, piochez-là. &lt;g&gt; Sinon gagnez +1 &lt;MORAL&gt;"   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="5" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Premiere de classe" subnameValue="Hermione Granger"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="CONNAISSANCE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Première de classe" subnameValue="Hermione Granger"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="CONNAISSANCE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/03-hermione/3-pas_dans_ceux.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="5" />
+<elementgroup name="Recruit" visible="true">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="2" />
+</elementgroup>
+<elementgroup name="Attack" visible="false">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="0" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="Vous pouvez utiliser des &lt;RECRUIT&gt; pour scanner. &lt;g&gt; &lt;k&gt;A tout moment&lt;r&gt;, défaussez cette carte pour annuler les effets d’une carte &lt;i&gt;Événement&lt;r&gt;  ou &lt;i&gt;Danger&lt;r&gt;."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="3" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Pas dans ceux de la reserve !" subnameValue="Hermione Granger"  textsize="34" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="LOYAUTE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Pas dans ceux de la réserve !" subnameValue="Hermione Granger"  textsize="34" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="LOYAUTE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/03-hermione/4-lumos_solem_b.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="8" />
+<elementgroup name="Recruit" visible="false">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="0" />
+</elementgroup>
+<elementgroup name="Attack" visible="true">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="4*" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;SORTILEGE&gt; : Vous pouvez chercher une carte &lt;i&gt;Lumos&lt;r&gt;  dans votre défausse et la mettre dans votre main. &lt;g&gt; Pour chaque carte &lt;i&gt;Lumos&lt;r&gt;  jouée ce tour : &lt;g&gt; +1&lt;ATTACK&gt;"   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Lumos Solem" subnameValue="Hermione Granger"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="SORTILEGE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Lumos Solem" subnameValue="Hermione Granger"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="SORTILEGE" />
+</style>
+</styles>
+</template>
+</card>
+
+</cards>
+
+</deck>
+
+
+
+<deck template="hero" name="Ron Weasley">
+
+<template>
+</template>
+
+<cards>
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/04-ron/1-poudlard_express.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="4" />
+<elementgroup name="Recruit" visible="true">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="2*" />
+</elementgroup>
+<elementgroup name="Attack" visible="false">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="0" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="Choisissez une &lt;k&gt;classe &lt;r&gt; puis révélez la première carte du deck &lt;i&gt;Soutien&lt;r&gt;. &lt;g&gt; Si la classe de cette carte correspond à votre choix : mettez la dans votre défausse. Sinon, remettez cette carte &lt;k&gt;sur &lt;r&gt; ou &lt;k&gt;sous &lt;r&gt; le deck &lt;i&gt;Soutien&lt;r&gt;.  &lt;g&gt; &lt;CONNAISSANCE&gt; : +1&lt;RECRUIT&gt;"   textsize="30" textsizebold="26" />
+<property name="Number in Deck" value="5" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Poudlard Express" subnameValue="Ron Weasley"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="LOYAUTE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Poudlard Express" subnameValue="Ron Weasley"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="LOYAUTE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/04-ron/2-leviosaaa_d.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="4" />
+<elementgroup name="Recruit" visible="false">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="0" />
+</elementgroup>
+<elementgroup name="Attack" visible="true">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="2*" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="Si vous jouez une carte &lt;k&gt;Hermione Granger&lt;r&gt;  ce tour : +1&lt;ATTACK&gt;"   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="5" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Leviosaaa" subnameValue="Ron Weasley"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="SORTILEGE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Leviosaaa" subnameValue="Ron Weasley"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="SORTILEGE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/04-ron/3-affreusement_barbare.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="6" />
+<elementgroup name="Recruit" visible="true">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="2" />
+</elementgroup>
+<elementgroup name="Attack" visible="true">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="2" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="Détruisez une carte de la grande salle et remplacez-la par la première carte de la salle commune. &lt;g&gt; &lt;COURAGE&gt; : +3 &lt;CDT&gt;"   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="3" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="C&apos;est affreusement barbare !" subnameValue="Ron Weasley"  textsize="34" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="COURAGE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="C&amp;apos;est affreusement barbare !" subnameValue="Ron Weasley"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="COURAGE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/04-ron/4-joyeux_noel_c.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="7" />
+<elementgroup name="Recruit" visible="false">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="0" />
+</elementgroup>
+<elementgroup name="Attack" visible="false">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="0" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="Tous les joueurs piochent une carte. &lt;g&gt; &lt;LOYAUTE&gt; : +5 &lt;CDT&gt;"   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Joyeux Noel" subnameValue="Ron Weasley"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="LOYAUTE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Joyeux Noël" subnameValue="Ron Weasley"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="SORTILEGE" />
+</style>
+</styles>
+</template>
+</card>
+
+</cards>
+
+</deck>
+
+
+
+<deck template="hero" name="Allies">
+
+<template>
+</template>
+
+<cards>
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/05-guests/1-mcgonagall.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="4" />
+<elementgroup name="Recruit" visible="true">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="2" />
+</elementgroup>
+<elementgroup name="Attack" visible="false">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="0" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Coopération &lt;r&gt; &lt;g&gt; Vous pouvez défausser cette carte et une autre pour gagner +2 &lt;MORAL&gt; &lt;g&gt; &lt;ASTUCE&gt; : Copiez une autre carte jouée ce tour."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="4" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Minerva McGonagall" subnameValue="Allies"  textsize="46" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="SORTILEGE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="McGonagall" subnameValue="Allies"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="SORTILEGE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/05-guests/2-dubois.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="4" />
+<elementgroup name="Recruit" visible="true">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="2" />
+</elementgroup>
+<elementgroup name="Attack" visible="true">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="0*" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Coopération &lt;r&gt; &lt;g&gt; Cette carte gagne +1&lt;ATTACK&gt; par carte &lt;i&gt;Harry Potter&lt;r&gt;  jouée ce tour. &lt;g&gt; Les cartes &lt;i&gt;Harry Potter &lt;r&gt; de la &lt;i&gt;Grande salle &lt;r&gt; coûtent -1&lt;RECRUIT&gt;"   textsize="30" textsizebold="29" />
+<property name="Number in Deck" value="3" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Olivier Dubois" subnameValue="Allies"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="COURAGE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Allies"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="COURAGE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/05-guests/3-neville_c.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="4" />
+<elementgroup name="Recruit" visible="true">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="1" />
+</elementgroup>
+<elementgroup name="Attack" visible="true">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="1" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Coopération &lt;r&gt; &lt;g&gt; A la fin du tour, si vous avez cette carte dans votre main, attachez-la à un ennemi. Cet ennemi a -2&lt;ATTACK&gt; &lt;g&gt; Le joueur détruisant l&apos;ennemi récupère cette carte et la place dans sa défausse."   textsize="30" textsizebold="28" />
+<property name="Number in Deck" value="3" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Neville Londubat" subnameValue="Allies"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="COURAGE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Allies"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="COURAGE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/05-guests/4-hagrid.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="5" />
+<elementgroup name="Recruit" visible="false">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="0" />
+</elementgroup>
+<elementgroup name="Attack" visible="true">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="2" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Coopération &lt;r&gt; &lt;g&gt; A la fin du tour, vous pouvez remettre une autre carte jouée ce tour sur votre deck."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="2" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Rubeus Hagrid" subnameValue="Allies"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="LOYAUTE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Allies"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="LOYAUTE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/05-guests/5-dumbledore_e.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="9" />
+<elementgroup name="Recruit" visible="false">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="0" />
+</elementgroup>
+<elementgroup name="Attack" visible="true">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="4" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Coopération &lt;r&gt; &lt;g&gt; Si c’est la première carte que vous jouez ce tour, vous pouvez défausser votre main et piocher cinq cartes."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="2" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Albus Dumbledore" subnameValue="Allies"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="ASTUCE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Allies"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+</cards>
+
+</deck>
+
+
+
+<deck template="hero" name="Soutien">
+
+<template>
+</template>
+
+<cards>
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/06-soutien/1-hedwige.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="3" />
+<elementgroup name="Recruit" visible="false">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="0" />
+</elementgroup>
+<elementgroup name="Attack" visible="true">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="2" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Coopération &lt;r&gt; "   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="3" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Hedwige" subnameValue="Soutien"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="SORTILEGE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Soutien"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="SORTILEGE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/06-soutien/2-fred_george_c.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="3" />
+<elementgroup name="Recruit" visible="false">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="0" />
+</elementgroup>
+<elementgroup name="Attack" visible="true">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="2" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Coopération &lt;r&gt; "   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="3" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Fred &amp; George" subnameValue="Soutien"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="ASTUCE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Soutien"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="ASTUCE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/06-soutien/3-famille_weasley_c.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="3" />
+<elementgroup name="Recruit" visible="true">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="2" />
+</elementgroup>
+<elementgroup name="Attack" visible="false">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="0" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Coopération &lt;r&gt; "   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="3" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Famille Weasley" subnameValue="Soutien"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="LOYAUTE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Soutien"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="LOYAUTE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/06-soutien/4-flitwick_b.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="3" />
+<elementgroup name="Recruit" visible="true">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="2" />
+</elementgroup>
+<elementgroup name="Attack" visible="false">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="0" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Coopération &lt;r&gt; "   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="3" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Filius  Flitwicks" subnameValue="Soutien"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="CONNAISSANCE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Soutien"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="CONNAISSANCE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/06-soutien/5-pomfresh_b.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="3" />
+<elementgroup name="Recruit" visible="true">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="2" />
+</elementgroup>
+<elementgroup name="Attack" visible="false">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="0" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Coopération &lt;r&gt; "   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="3" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Mme Pomfresh" subnameValue="Soutien"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="COURAGE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Soutien"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="COURAGE" />
+</style>
+</styles>
+</template>
+</card>
+
+</cards>
+
+</deck>
+
+
+
+<deck template="objectif" name="Objectifs">
+
+<template>
+</template>
+
+<cards>
+<card template="objectif_location">
+<template>
+<bgimage name="Image" path="./card_pictures/07-objectifs/1-location_a.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay_big" path="back_underlay_big.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<textarea name="Card Text" value="&lt;k&gt;Danger 1 : Cambriolage à Gringotts&lt;r&gt; &lt;g&gt; Perdez la moitié de la bourse (arrondi à l&apos;inférieur) &lt;g&gt; &lt;k&gt;Danger 2 : Balais ensorcelé&lt;r&gt; &lt;g&gt; Tirez des Berties-crochues (sans en applicer les effets) jusqu&apos;à en tirer 2 identiques. Défaussez autant de cartes entre tous les joueurs. &lt;g&gt; &lt;k&gt;Danger 3 : Avada kedavra &lt;r&gt; &lt;g&gt; Mélanger les &lt;i&gt;Tentations &lt;r&gt; vaincues dans les &lt;i&gt;Forces du mal&lt;r&gt;.&lt;r&gt;"   textsize="26" textsizebold="26" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Location" value="Scenario" subnameValue="Objectifs"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Location" value="Location" subnameValue="Objectifs"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_divers">
+<template>
+<bgimage name="Image" path="./card_pictures/07-objectifs/2-sauver_hermione.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Objectif&lt;r&gt;  : Vaincre &lt;i&gt;Le Troll&lt;r&gt;. &lt;g&gt; &lt;k&gt;Événement&lt;r&gt;  : Vous ne pouvez pas infliger des &lt;ATTACK&gt; aux ennemis jusqu&apos;à la fin du tour."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="1 - Sauver Hermione" subnameValue="Objectifs"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Objectifs"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_divers">
+<template>
+<bgimage name="Image" path="./card_pictures/07-objectifs/3-sous_la_trappe.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Objectif &lt;r&gt; : Résoudre les quatre énigmes. &lt;g&gt; &lt;k&gt;Événement &lt;r&gt; : Le joueur actif défausse toutes ses cartes &lt;i&gt;Alliés&lt;r&gt;."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="2 - Sous la trappe" subnameValue="Objectifs"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Objectifs"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_divers">
+<template>
+<bgimage name="Image" path="./card_pictures/07-objectifs/4-pierre_philo_c.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Objectif &lt;r&gt; : Sécuriser la &lt;i&gt;Pierre philosophale&lt;r&gt;. &lt;g&gt; &lt;k&gt;Événement &lt;r&gt; : Le joueur actif défausse toutes ses cartes héros autres que &lt;i&gt;Harry Potter&lt;r&gt;."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="3 - Pierre philosophale" subnameValue="Objectifs"  textsize="44" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Objectifs"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+</cards>
+
+</deck>
+
+
+
+<deck template="objectif" name="Objectif 1">
+
+<template>
+</template>
+
+<cards>
+<card template="objectif_enemy">
+<template>
+<bgimage name="Image" path="./card_pictures/08-obj1/3-drago.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<icon name="Attack" value="ATTACK" />
+<text name="Attack Value" value="3" />
+<textarea name="Card Text" value="&lt;k&gt;Vaincu &lt;r&gt; : +2 &lt;CDT&gt; &lt;g&gt; Durant la prochaine phase de nettoyage, ne piochez que cinq cartes au lieu de six."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="4" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Drago" subnameValue="Objectif 1"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Objectif 1"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_event">
+<template>
+<bgimage name="Image" path="./card_pictures/08-obj1/1-event.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<property name="Number in Deck" value="2" />
+<styles>
+<style name="Villains">
+<cardname name="Evenement" value="Evenement" subnameValue="Objectif 1"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Evenement" value="Evenement" subnameValue="Objectif 1"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_hazard">
+<template>
+<bgimage name="Image" path="./card_pictures/08-obj1/2-hazard.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Hazard" value="Danger" subnameValue="Objectif 1"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Hazard" value="Danger" subnameValue="Objectif 1"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_divers">
+<template>
+<bgimage name="Image" path="./card_pictures/08-obj1/4-cours_enchantement.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Révélé &lt;r&gt; : Attachez cette carte à la &lt;i&gt;Salle de classe&lt;r&gt;. &lt;g&gt; Si celle-ci ne contient pas d’autre carte, vous pouvez dépenser 5&lt;RECRUIT&gt; et 1&lt;ATTACK&gt; pour vaincre &lt;i&gt;Le Troll&lt;r&gt;. &lt;g&gt; Pour chaque carte &lt;COURAGE&gt; jouée ce tour, réduisez ce coût de 1&lt;RECRUIT&gt;"   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Cours d&apos;enchantement" subnameValue="Objectif 1"  textsize="44" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Objectif 1"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_boss">
+<template>
+<bgimage name="Image" path="./card_pictures/08-obj1/5-troll.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay_big" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<icon name="Attack" value="ATTACK" />
+<text name="Attack Value" value="99" />
+<textarea name="Card Text" value="&lt;k&gt;Zone de combat &lt;r&gt; : Lors de la phase d’attaque, &lt;i&gt;Le Troll&lt;r&gt;  détruit la carte de la &lt;i&gt;Grande salle &lt;r&gt; coûtant le plus cher. &lt;g&gt; Utilisez 1&lt;ATTACK&gt; : Considérez cette carte comme hors de la &lt;i&gt;Zone de combat &lt;r&gt; jusqu’à la fin du tour."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Le Troll" subnameValue="Objectif 1"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Objectif 1"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+</cards>
+
+</deck>
+
+
+
+<deck template="objectif" name="Objectif 2">
+
+<template>
+</template>
+
+<cards>
+<card template="objectif_boss">
+<template>
+<bgimage name="Image" path="./card_pictures/09-obj2/5-filet_du_diable.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay_big" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<icon name="Attack" value="ATTACK" />
+<text name="Attack Value" value="10*" />
+<textarea name="Card Text" value="&lt;k&gt;Zone de combat &lt;r&gt; : Vous ne pouvez pas vaincre d’autres ennemis dans la &lt;i&gt;Zone de combat&lt;r&gt;. &lt;g&gt; -2&lt;ATTACK&gt; pour chaque carte &lt;CONNAISSANCE&gt; ou &lt;COURAGE&gt; jouée ce tour. &lt;g&gt; &lt;k&gt;Énigme &lt;r&gt; : Tuez le &lt;i&gt;Filet du Diable&lt;r&gt;."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Filet du Diable" subnameValue="Objectif 2"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Objectif 2"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_divers">
+<template>
+<bgimage name="Image" path="./card_pictures/09-obj2/8-echec_sorcier.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Révélé :&lt;r&gt;  Mettez cette carte sur le &lt;i&gt;Terrain d’entraînement&lt;r&gt;. &lt;g&gt; &lt;k&gt;Énigme :&lt;r&gt;  Durant leur tour, les joueurs peuvent défausser une ou plusieurs cartes &lt;i&gt;Ron &lt;r&gt; pour les attacher à la &lt;i&gt;Salle de classe&lt;r&gt;  et à la &lt;i&gt;Cabane de Hagrid&lt;r&gt;  pour autant que ces cases soient libres. Lorsque les deux cartes &lt;i&gt;Ron &lt;r&gt; ont été attachées, détruisez-les pour résoudre cette énigme."   textsize="29" textsizebold="29" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Echecs version sorcier" subnameValue="Objectif 2"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Objectif 2"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_enemy">
+<template>
+<bgimage name="Image" path="./card_pictures/09-obj2/3-rogue_c.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<icon name="Attack" value="ATTACK" />
+<text name="Attack Value" value="5" />
+<textarea name="Card Text" value="&lt;k&gt;Vaincu : &lt;r&gt; Révélez les deux premières cartes de votre deck. Détruisez-en une et reposez l’autre sur votre deck."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="3" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Severus Rogue" subnameValue="Objectif 2"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Objectif 2"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_event">
+<template>
+<bgimage name="Image" path="./card_pictures/09-obj2/1-event.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<property name="Number in Deck" value="2" />
+<styles>
+<style name="Villains">
+<cardname name="Evenement" value="Evenement" subnameValue="Objectif 2"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Evenement" value="Evenement" subnameValue="Objectif 2"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_hazard">
+<template>
+<bgimage name="Image" path="./card_pictures/09-obj2/2-hazard.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Hazard" value="Danger" subnameValue="Objectif 2"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Hazard" value="Danger" subnameValue="Objectif 2"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_boss">
+<template>
+<bgimage name="Image" path="./card_pictures/09-obj2/6-cle_argent.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay_big" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<icon name="Attack" value="ATTACK" />
+<text name="Attack Value" value="4" />
+<textarea name="Card Text" value="&lt;k&gt;Vaincu &lt;r&gt; ou &lt;k&gt;scanné &lt;r&gt; : Mettez la &lt;i&gt;Clef d’argent &lt;r&gt; dans votre défausse. &lt;g&gt; &lt;k&gt;Zone de combat &lt;r&gt; : Les cartes de la &lt;i&gt;Grande salle &lt;r&gt; coûtent +1&lt;RECRUIT&gt;&lt;g&gt; &lt;k&gt;Énigme &lt;r&gt; : Jouez cette carte depuis votre main pour résoudre cette énigme."   textsize="30" textsizebold="28" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="La clef d&apos;argent" subnameValue="Objectif 2"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Objectif 2"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_enemy">
+<template>
+<bgimage name="Image" path="./card_pictures/09-obj2/7-touffu_C.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<icon name="Attack" value="ATTACK" />
+<text name="Attack Value" value="3*" />
+<textarea name="Card Text" value="&lt;i&gt;Touffu&lt;r&gt;  à +2&lt;ATTACK&gt; pour chaque héro différent utilisé pour le vaincre (sauf &lt;i&gt;Hagrid&lt;r&gt;) &lt;g&gt; &lt;k&gt;Énigme&lt;r&gt; : Terrassez &lt;i&gt;Touffu&lt;r&gt;."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Touffu" subnameValue="Objectif 2"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Objectif 2"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_divers">
+<template>
+<bgimage name="Image" path="./card_pictures/09-obj2/4-miroir_du_rised.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="Payez 6&lt;RECRUIT&gt; pour aquerir cette fourniture.&lt;g&gt; &lt;k&gt;Zone de combat &lt;r&gt; : Détruisez cette carte. &lt;g&gt;&lt;g&gt; &lt;k&gt;Fournigure&lt;r&gt;&lt;g&gt;+1&lt;ATTACK&gt; chaque tour."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Miroir du Rised" subnameValue="Objectif 2"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Objectif 2"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+</cards>
+
+</deck>
+
+
+
+<deck template="objectif" name="Objectif 3">
+
+<template>
+</template>
+
+<cards>
+<card template="objectif_boss">
+<template>
+<bgimage name="Image" path="./card_pictures/10-obj3/6-quirrell.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay_big" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<icon name="Attack" value="ATTACK" />
+<text name="Attack Value" value="12" />
+<textarea name="Card Text" value="&lt;k&gt;Zone de combat &lt;r&gt; : Déplacer la &lt;i&gt;Pierre philosophale&lt;r&gt;  vers les &lt;i&gt;Forces du mal&lt;r&gt;  coûte +1&lt;RECRUIT&gt; &lt;g&gt; &lt;k&gt;Zone de combat &lt;r&gt; : A la fin du tour, tirez une deuxième dragée Bertie-Crochue. &lt;g&gt; &lt;k&gt;Vaincu &lt;r&gt; : +5 &lt;CDT&gt;"   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Quirinus Quirrell" subnameValue="Objectif 3"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Objectif 3"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_divers">
+<template>
+<bgimage name="Image" path="./card_pictures/10-obj3/7-pierre_philo.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="Payez 6&lt;RECRUIT&gt; : Déplacez la &lt;i&gt;Pierre philosophale&lt;r&gt;  d’une case vers les &lt;i&gt;Forces du mal&lt;r&gt;. Si la pierre atteint les &lt;i&gt;Forces du mal&lt;r&gt;, mettez la &lt;i&gt;Pierre philosophale&lt;r&gt;  dans votre défausse. &lt;g&gt; Jouez cette carte depuis votre main pour résoudre &lt;k&gt;l&apos;objectif 3&lt;r&gt;."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Pierre philosophale" subnameValue="Objectif 3"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Objectif 3"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_enemy">
+<template>
+<bgimage name="Image" path="./card_pictures/10-obj3/3-voldemort.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<icon name="Attack" value="ATTACK" />
+<text name="Attack Value" value="6*" />
+<textarea name="Card Text" value="&lt;k&gt;Révélé : &lt;r&gt; Placez la coupe des quatre maisons sur &lt;i&gt;Serpentard&lt;r&gt;. &lt;g&gt; Cette carte gagne +1&lt;ATTACK&gt; pour chaque &lt;i&gt;Tentation&lt;r&gt;  révélée."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="2" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Voldemort" subnameValue="Objectif 3"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Objectif 3"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_event">
+<template>
+<bgimage name="Image" path="./card_pictures/10-obj3/1-event.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<property name="Number in Deck" value="2" />
+<styles>
+<style name="Villains">
+<cardname name="Evenement" value="Evenement" subnameValue="Objectif 3"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Evenement" value="Evenement" subnameValue="Objectif 3"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_hazard">
+<template>
+<bgimage name="Image" path="./card_pictures/10-obj3/2-hazard.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Hazard" value="Danger" subnameValue="Objectif 3"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Hazard" value="Danger" subnameValue="Objectif 3"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_boss">
+<template>
+<bgimage name="Image" path="./card_pictures/10-obj3/4-tentation.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay_big" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<icon name="Attack" value="ATTACK" />
+<text name="Attack Value" value="8*" />
+<textarea name="Card Text" value="&lt;k&gt;Révélé : &lt;r&gt; Mettez cette carte dans la &lt;i&gt;Zone de combat.&lt;r&gt; &lt;g&gt; Tant que cette carte est révélée, la &lt;i&gt;Pierre philosophale &lt;r&gt; se déplace d’une case vers la &lt;i&gt;Zone de combat &lt;r&gt; à la fin du tour (max 1x par tour). &lt;g&gt; Cette carte a -1&lt;ATTACK&gt; pour chaque carte &lt;COURAGE&gt; jouée ce tour."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="4" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Tentation" subnameValue="Objectif 3"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Objectif 3"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_divers">
+<template>
+<bgimage name="Image" path="./card_pictures/10-obj3/5-firenze_b.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="Compte comme un ennemi. &lt;g&gt; Payez 7&lt;RECRUIT&gt; : Défaussez cette carte pour détruire une carte &lt;i&gt;Voldemort &lt;r&gt; révélée."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="2" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Firenze" subnameValue="Objectif 3"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Objectif 3"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+</cards>
+
+</deck>
+
+
+
+<deck template="objectif" name="Embuches">
+
+<template>
+</template>
+
+<cards>
+<card template="objectif_divers">
+<template>
+<bgimage name="Image" path="./card_pictures/11-embuches/1-escaliers.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="Chaque joueur met la première carte de son deck sur le deck de son voisin de gauche."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="3" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Escaliers" subnameValue="Embuches"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Embuches"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_enemy">
+<template>
+<bgimage name="Image" path="./card_pictures/11-embuches/2-grosse_dame.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<icon name="Attack" value="ATTACK" />
+<text name="Attack Value" value="3" />
+<textarea name="Card Text" value="&lt;k&gt;Révélé &lt;r&gt; : Le joueur actif peut révéler une carte &lt;ASTUCE&gt; ou &lt;CONNAISSANCE&gt; &lt;g&gt; Sinon, perdez 1 &lt;MORAL&gt;"   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="3" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Grosse dame" subnameValue="Embuches"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Embuches"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_event">
+<template>
+<bgimage name="Image" path="./card_pictures/11-embuches/1-event.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<property name="Number in Deck" value="3" />
+<styles>
+<style name="Villains">
+<cardname name="Evenement" value="Evenement" subnameValue="Embuches"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+<style name="Base Set">
+<cardname name="Evenement" value="Evenement" subnameValue="Embuches"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_enemy">
+<template>
+<bgimage name="Image" path="./card_pictures/11-embuches/3-dursley_b.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<icon name="Attack" value="ATTACK" />
+<text name="Attack Value" value="4" />
+<textarea name="Card Text" value="&lt;i&gt;&quot;Fais comme si tu n&apos;existais pas&quot;&lt;r&gt;"   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="3" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Famille Dursley" subnameValue="Embuches"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Embuches"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_enemy">
+<template>
+<bgimage name="Image" path="./card_pictures/11-embuches/5-miss_teigne.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<icon name="Attack" value="ATTACK" />
+<text name="Attack Value" value="4" />
+<textarea name="Card Text" value="&lt;k&gt;Zone de combat &lt;r&gt; : Montrez une carte &lt;ASTUCE&gt; ou perdez 2 &lt;MORAL&gt;. &lt;g&gt; Puis détruisez cette carte."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="3" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Miss Teigne" subnameValue="Embuches"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Embuches"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_enemy">
+<template>
+<bgimage name="Image" path="./card_pictures/11-embuches/2-rusard.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<icon name="Attack" value="ATTACK" />
+<text name="Attack Value" value="3" />
+<textarea name="Card Text" value="&lt;k&gt;Révélé : &lt;r&gt; Placez cette carte dans les &lt;i&gt;Couloirs&lt;r&gt;."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="3" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Rusard" subnameValue="Embuches"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Embuches"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_divers">
+<template>
+<bgimage name="Image" path="./card_pictures/11-embuches/7-examens.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Révélé &lt;r&gt; : Placez cette carte sur la &lt;i&gt;Salle de classe&lt;r&gt;. Cette carte ne se déplace pas. &lt;g&gt; &lt;k&gt;Salle de classe &lt;r&gt; : Les cartes de la &lt;i&gt;Grande salle &lt;r&gt; coûtent -1&lt;RECRUIT&gt; &lt;g&gt; Les ennemis ont +2&lt;ATTACK&gt; &lt;g&gt; Payez 3&lt;RECRUIT&gt; : Défausser cette carte."   textsize="30" textsizebold="26" />
+<property name="Number in Deck" value="3" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Examens" subnameValue="Embuches"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Embuches"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="objectif_enemy">
+<template>
+<bgimage name="Image" path="./card_pictures/11-embuches/8-cicatrice.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_underlay" path="back_underlay.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<elementgroup name="Victory" visible="false">
+<icon name="Victory Icon" value="VICTORY" />
+<text name="Victory Value" value="0" />
+</elementgroup>
+<icon name="Attack" value="ATTACK" />
+<text name="Attack Value" value="3" />
+<textarea name="Card Text" value="Les cartes &lt;i&gt;Harry Potter&lt;r&gt;  ont toutes une force de 0&lt;ATTACK&gt; tant qu&apos;une &lt;i&gt;Cicatrice &lt;r&gt; est révélée."   textsize="30" textsizebold="34" />
+<property name="Number in Deck" value="3" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Cicatrice" subnameValue="Embuches"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Embuches"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+</cards>
+
+</deck>
+
+
+
+<deck template="hero" name="Chemin de traverse">
+
+<template>
+</template>
+
+<cards>
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/12-cdt/1-baguette_houx_a.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="2" />
+<elementgroup name="Recruit" visible="false">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="0" />
+</elementgroup>
+<elementgroup name="Attack" visible="false">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="0" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Détruisez une carte de votre main ou de votre défausse."   textsize="30" textsizebold="30" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Baguette de houx" subnameValue="Chemin de traverse"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="NONE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Chemin de traverse"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/12-cdt/2-vif_dor_b.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="2" />
+<elementgroup name="Recruit" visible="false">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="0" />
+</elementgroup>
+<elementgroup name="Attack" visible="false">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="0" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; +1 &lt;MORAL&gt;"   textsize="34" textsizebold="34" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Vif d&apos;or" subnameValue="Chemin de traverse"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="NONE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Chemin de traverse"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/12-cdt/3-cape_invi_c.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="2" />
+<elementgroup name="Recruit" visible="false">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="0" />
+</elementgroup>
+<elementgroup name="Attack" visible="false">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="0" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Regardez une carte de &lt;i&gt;Poudlard&lt;r&gt;  sans la révéler."   textsize="30" textsizebold="30" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Cape d&apos;invisibilite" subnameValue="Chemin de traverse"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="NONE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Chemin de traverse"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/12-cdt/4-chocogrenouille.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="3" />
+<elementgroup name="Recruit" visible="false">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="0" />
+</elementgroup>
+<elementgroup name="Attack" visible="false">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="0" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Piochez les trois premières cartes de votre deck. &lt;g&gt; Gardez-en une, défaussez-en une et reposez-en une sur votre deck."   textsize="30" textsizebold="30" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Chocogrenouille" subnameValue="Chemin de traverse"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="NONE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Chemin de traverse"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/12-cdt/5-alohomora.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="3" />
+<elementgroup name="Recruit" visible="false">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="0" />
+</elementgroup>
+<elementgroup name="Attack" visible="false">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="0" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Echangez une carte de la &lt;i&gt;Grande salle&lt;r&gt;  contre une carte de la &lt;i&gt;Grande salle&lt;r&gt;  défaussée.&lt;r&gt;"   textsize="30" textsizebold="30" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Alohomora" subnameValue="Chemin de traverse"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="NONE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Chemin de traverse"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/12-cdt/6-oeuf_dragon_b.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="3" />
+<elementgroup name="Recruit" visible="false">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="0" />
+</elementgroup>
+<elementgroup name="Attack" visible="false">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="0" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Révelez la première carte de la &lt;i&gt;Salle commune&lt;r&gt;. &lt;g&gt; Si son coût est de 5 ou plus gagnez-la. Sinon défaussez une carte de valeur équivalente ou supérieur. Si vous ne pouvez pas défausser de carte, perdez -1 &lt;MORAL&gt;"   textsize="30" textsizebold="30" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Oeuf de dragon" subnameValue="Chemin de traverse"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="NONE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Chemin de traverse"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/12-cdt/7-nimbus_c.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="5" />
+<elementgroup name="Recruit" visible="false">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="0" />
+</elementgroup>
+<elementgroup name="Attack" visible="false">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="0" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Au début du prochain tour ne piochez pas de carte des &lt;i&gt;Forces du mal&lt;r&gt;."   textsize="30" textsizebold="30" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Nimbus 2000" subnameValue="Chemin de traverse"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="NONE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Chemin de traverse"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/12-cdt/8-pull_ron_b.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="5" />
+<elementgroup name="Recruit" visible="false">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="0" />
+</elementgroup>
+<elementgroup name="Attack" visible="false">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="0" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Choisissez une classe, la carte &lt;i&gt;Pull de Noël&lt;r&gt;  est considérée comme appartenant à cette classe jusqu&apos;à la fin du tour."   textsize="30" textsizebold="30" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Pull de Noel" subnameValue="Chemin de traverse"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="NONE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Chemin de traverse"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+<card template="hero_rare">
+<template>
+<bgimage name="Image" path="./card_pictures/12-cdt/9-petrificus_b.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
+<icon name="Second Power" value="NONE" />
+<text name="Cost" value="5" />
+<elementgroup name="Recruit" visible="false">
+<icon name="Recruit Icon" value="RECRUIT" />
+<text name="Recruit Value" value="0" />
+</elementgroup>
+<elementgroup name="Attack" visible="false">
+<icon name="Attack Icon" value="ATTACK" />
+<text name="Attack Value" value="0" />
+</elementgroup>
+<elementgroup name="Piercing" visible="false">
+<icon name="Piercing Icon" value="PIERCING" />
+<text name="Piercing Value" value="0" />
+</elementgroup>
+<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Défaussez cette carte pour assommer jusqu&apos;à &lt;g&gt; 3 ennemis. &lt;g&gt; Ils sont considérés comme hors de la zone de combat jusqu&apos;à la fin du tour."   textsize="30" textsizebold="30" />
+<property name="Number in Deck" value="1" />
+<styles>
+<style name="Villains">
+<cardname name="Card Name" value="Petrificus totalus" subnameValue="Chemin de traverse"  textsize="48" subnamesize="34" />
+<icon name="Team" value="ECOLE_DES_SORCIERS" />
+<icon name="Power" value="NONE" />
+</style>
+<style name="Base Set">
+<cardname name="Card Name" value="Card Name" subnameValue="Chemin de traverse"  textsize="48" subnamesize="34" />
+<icon name="Team" value="NONE" />
+<icon name="Power" value="NONE" />
+</style>
+</styles>
+</template>
+</card>
+
+</cards>
+
+</deck>
+
+
+
+</legedititems>
+
+</xml>

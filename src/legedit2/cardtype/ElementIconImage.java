@@ -83,7 +83,7 @@ public class ElementIconImage extends CustomElement {
 
 			}
 			
-			if (rotate > 0)
+			if (rotate != 0)
 			{
 				double rotationRequired = Math.toRadians (rotate);
 				double locationX = bi.getWidth() / 2;
@@ -106,7 +106,7 @@ public class ElementIconImage extends CustomElement {
 	    	if (drawUnderlay)
 	    		drawUnderlay(bi, g, BufferedImage.TYPE_INT_ARGB, xStart, yStart, getPercentage(blurRadius,getScale()), blurDouble, getPercentage(blurExpand,getScale()), blurColour);
 	    	
-	    	if (rotate > 0)
+	    	if (rotate != 0)
 			{
 				double rotationRequired = Math.toRadians (rotate);
 				double locationX = bi.getWidth() / 2;

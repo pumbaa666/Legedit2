@@ -5,6 +5,7 @@ import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
@@ -99,13 +100,15 @@ public class LegeditExporter3by3 extends LegeditExporter
 						getDialog().getProgressBar().setValue(value);
 
 						BufferedImage image = resizeImage(bi, cardWidth, cardHeight);
-						for(int i = 0; i < ((Card)li).getNumberInDeck(); i++)
+//						for(int i = 0; i < ((Card)li).getNumberInDeck(); i++)
 						{
 							images.add(image);
 						}
 					}
 
 				}
+				Collections.shuffle(images);
+
 
 				int i = 0;
 

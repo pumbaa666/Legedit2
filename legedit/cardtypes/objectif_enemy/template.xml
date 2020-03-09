@@ -76,8 +76,8 @@
 
 	<textarea name="Card Text" alignmenthorizontal="left"
 		alignmentvertical="top" allowchange="true" defaultvalue="Card Text."
-		colour="#000000" textsize="34" rectxarray="140,660,660,555,555,140"
-		rectyarray="780,780,880,880,965,1000" debug="false" />
+		colour="#000000" textsize="34" rectxarray="90,660,660,555,555,90"
+		rectyarray="730,730,880,880,965,1000" debug="false" />
 
 	<property name="Number in Deck" property="numberindeck"
 		defaultvalue="3" />

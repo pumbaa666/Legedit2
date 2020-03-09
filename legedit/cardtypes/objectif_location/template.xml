@@ -17,10 +17,10 @@
 
 		<style name="Villains">
 
-			<cardname name="Location" defaultvalue="Location"
+			<cardname name="Location" defaultvalue="Location" rotate="-90"
 				allowchange="true" includesubname="true" highlight="banner"
 				highlightcolour="#111111" uppercase="true" alignment="center" x="375"
-				y="40" colour="#e9dc98" textsize="48" subnametext="%DECKNAME%"
+				y="200" colour="#e9dc98" textsize="48" subnametext="%DECKNAME%"
 				subnameeditable="true" subnamesize="34" subnamegap="15" blurradius="15"
 				bluedouble="true" blurexpand="4" />
 
@@ -51,8 +51,8 @@
 
 	<textarea name="Card Text" alignmenthorizontal="left"
 		alignmentvertical="top" rotate="-90" allowchange="true" defaultvalue="Card Text."
-		colour="#000000" textsize="34" rectxarray="0,750,750,0,0,0"
-		rectyarray="450,450,820,820,820,820" debug="false" />
+		colour="#000000" textsize="34" rectxarray="0,710,710,0,0,0"
+		rectyarray="509,509,845,845,845,845" debug="false" />
 
 	<property name="Number in Deck" property="numberindeck"
 		defaultvalue="1" />

@@ -209,7 +209,7 @@ public class ElementCardName extends CustomElement implements Cloneable
 				g2 = setGraphicsHints(g2);
 				g2.setColor(colour);
 			}
-			if(rotate > 0)
+			if(rotate != 0)
 			{
 				double rotationRequired = Math.toRadians(rotate);
 				double locationX = bi.getWidth() / 2;

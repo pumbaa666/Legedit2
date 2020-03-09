@@ -79,7 +79,7 @@ public class ElementImage extends CustomElement {
 
 			}
 			
-			if (rotate > 0)
+			if (rotate != 0)
 			{
 				double rotationRequired = Math.toRadians (rotate);
 				double locationX = bi.getWidth() / 2;

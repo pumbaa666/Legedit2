@@ -22,7 +22,7 @@
 				highlightcolour="#111111" uppercase="true" alignment="center" x="375"
 				y="40" colour="#e9dc98" textsize="48" subnametext="%DECKNAME%"
 				subnameeditable="true" subnamesize="34" subnamegap="15" blurradius="15"
-				bluedouble="true" blurexpand="4" fontname="WizardsMagic.ttf" />
+				bluedouble="true" blurexpand="4" />
 
 			<icon name="Team" defaultvalue="none" allowchange="true"
 				icontype="team" x="50" y="50" maxwidth="60" maxheight="60"
@@ -38,7 +38,7 @@
 				highlightcolour="#111111" uppercase="true" alignment="center" x="375"
 				y="40" colour="#e9dc98" textsize="48" subnametext="%DECKNAME%"
 				subnameeditable="true" subnamesize="34" subnamegap="15" blurradius="15"
-				bluedouble="true" blurexpand="4" fontname="WizardsMagic.ttf" />
+				bluedouble="true" blurexpand="4" />
 
 			<icon name="Team" defaultvalue="none" allowchange="true"
 				icontype="team" x="50" y="50" maxwidth="60" maxheight="60"
@@ -76,8 +76,8 @@
 
 	<textarea name="Card Text" alignmenthorizontal="left"
 		alignmentvertical="top" allowchange="true" defaultvalue="Card Text."
-		colour="#000000" textsize="34" rectxarray="140,660,660,555,555,140"
-		rectyarray="630,630,880,880,965,1000" debug="false" />
+		colour="#000000" textsize="34" rectxarray="90,660,660,555,555,90"
+		rectyarray="730,730,880,880,1000,1000" debug="false" />
 
 	<property name="Number in Deck" property="numberindeck"
 		defaultvalue="1" />

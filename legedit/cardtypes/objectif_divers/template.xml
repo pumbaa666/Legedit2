@@ -9,7 +9,7 @@
 	<bgimage name="Image" fullsize="false" x="0" y="0" maxwidth="750"
 		maxheight="1050" allowchange="true" zoomable="true" />
 
-	<image name="back_underlay_big" templatefile="true" path="back_underlay_big.png"
+	<image name="back_underlay" templatefile="true" path="back_underlay.png"
 		fullsize="true" x="0" y="0" maxwidth="750" maxheight="1050"
 		allowchange="false" zoomable="false" />
 
@@ -65,8 +65,8 @@
 
 	<textarea name="Card Text" alignmenthorizontal="left"
 		alignmentvertical="top" allowchange="true" defaultvalue="Card Text."
-		colour="#000000" textsize="34" rectxarray="100,690,690,555,555,100"
-		rectyarray="630,630,880,880,965,1000" debug="false" />
+		colour="#000000" textsize="34" rectxarray="90,660,660,660,660,90"
+		rectyarray="730,730,1010,1010,1010,1010" debug="false" />
 
 	<property name="Number in Deck" property="numberindeck"
 		defaultvalue="1" />

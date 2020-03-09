@@ -315,7 +315,7 @@ public class ElementScrollingTextArea extends CustomElement {
 	    		e.printStackTrace();
 	    	}
 
-	    	if (rotate > 0)
+	    	if (rotate != 0)
 			{
 				double rotationRequired = Math.toRadians (rotate);
 				double locationX = bi.getWidth() / 2;
@@ -380,7 +380,7 @@ public class ElementScrollingTextArea extends CustomElement {
 							}
 						}
 
-						if (rotate > 0)
+						if (rotate != 0)
 						{
 							double rotationRequired = Math.toRadians (rotate);
 							double locationX = bi.getWidth() / 2;
