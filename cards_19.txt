@@ -1310,7 +1310,7 @@
 <property name="Number in Deck" value="1" />
 <styles>
 <style name="Villains">
-<cardname name="Card Name" value="Miroir du Rised" subnameValue=""  textsize="48" subnamesize="34" />
+<cardname name="Card Name" value="Miroir du Rised" subnameValue="Objectif 2"  textsize="48" subnamesize="34" />
 <icon name="Team" value="ECOLE_DES_SORCIERS" />
 </style>
 <style name="Base Set">
@@ -1706,7 +1706,7 @@
 <image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
 <image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
 <icon name="Second Power" value="NONE" />
-<text name="Cost" value="2" />
+<text name="Cost" value="8" />
 <elementgroup name="Recruit" visible="false">
 <icon name="Recruit Icon" value="RECRUIT" />
 <text name="Recruit Value" value="0" />
@@ -1719,7 +1719,7 @@
 <icon name="Piercing Icon" value="PIERCING" />
 <text name="Piercing Value" value="0" />
 </elementgroup>
-<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Détruisez une carte de votre main ou de votre défausse."   textsize="30" textsizebold="30" />
+<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Détruisez une carte de votre main."   textsize="30" textsizebold="30" />
 <property name="Number in Deck" value="1" />
 <styles>
 <style name="Villains">
@@ -1742,7 +1742,7 @@
 <image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
 <image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
 <icon name="Second Power" value="NONE" />
-<text name="Cost" value="2" />
+<text name="Cost" value="8" />
 <elementgroup name="Recruit" visible="false">
 <icon name="Recruit Icon" value="RECRUIT" />
 <text name="Recruit Value" value="0" />
@@ -1778,7 +1778,7 @@
 <image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
 <image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
 <icon name="Second Power" value="NONE" />
-<text name="Cost" value="2" />
+<text name="Cost" value="9" />
 <elementgroup name="Recruit" visible="false">
 <icon name="Recruit Icon" value="RECRUIT" />
 <text name="Recruit Value" value="0" />
@@ -1791,7 +1791,7 @@
 <icon name="Piercing Icon" value="PIERCING" />
 <text name="Piercing Value" value="0" />
 </elementgroup>
-<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Regardez une carte de &lt;i&gt;Poudlard&lt;r&gt;  sans la révéler."   textsize="30" textsizebold="30" />
+<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Au lieu de subir les effets d&apos;une Bertie-Crochue, perdez 1&lt;MORAL&gt;"   textsize="30" textsizebold="30" />
 <property name="Number in Deck" value="1" />
 <styles>
 <style name="Villains">
@@ -1814,7 +1814,7 @@
 <image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
 <image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
 <icon name="Second Power" value="NONE" />
-<text name="Cost" value="3" />
+<text name="Cost" value="7" />
 <elementgroup name="Recruit" visible="false">
 <icon name="Recruit Icon" value="RECRUIT" />
 <text name="Recruit Value" value="0" />
@@ -1827,7 +1827,7 @@
 <icon name="Piercing Icon" value="PIERCING" />
 <text name="Piercing Value" value="0" />
 </elementgroup>
-<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Piochez les trois premières cartes de votre deck. &lt;g&gt; Gardez-en une, défaussez-en une et reposez-en une sur votre deck."   textsize="30" textsizebold="30" />
+<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Révelez la première carte du paquet &lt;i&gt;Soutien&lt;r&gt;. &lt;g&gt; Vous obtenez un lien de cette classe."   textsize="30" textsizebold="30" />
 <property name="Number in Deck" value="1" />
 <styles>
 <style name="Villains">
@@ -1850,7 +1850,7 @@
 <image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
 <image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
 <icon name="Second Power" value="NONE" />
-<text name="Cost" value="3" />
+<text name="Cost" value="7" />
 <elementgroup name="Recruit" visible="false">
 <icon name="Recruit Icon" value="RECRUIT" />
 <text name="Recruit Value" value="0" />
@@ -1863,7 +1863,7 @@
 <icon name="Piercing Icon" value="PIERCING" />
 <text name="Piercing Value" value="0" />
 </elementgroup>
-<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Echangez une carte de la &lt;i&gt;Grande salle&lt;r&gt;  contre une carte de la &lt;i&gt;Grande salle&lt;r&gt;  défaussée.&lt;r&gt;"   textsize="30" textsizebold="30" />
+<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Regardez une carte de &lt;i&gt;Poudlard&lt;r&gt;  sans la réveléer.&lt;r&gt;"   textsize="30" textsizebold="30" />
 <property name="Number in Deck" value="1" />
 <styles>
 <style name="Villains">
@@ -1886,7 +1886,7 @@
 <image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
 <image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
 <icon name="Second Power" value="NONE" />
-<text name="Cost" value="3" />
+<text name="Cost" value="9" />
 <elementgroup name="Recruit" visible="false">
 <icon name="Recruit Icon" value="RECRUIT" />
 <text name="Recruit Value" value="0" />
@@ -1899,7 +1899,7 @@
 <icon name="Piercing Icon" value="PIERCING" />
 <text name="Piercing Value" value="0" />
 </elementgroup>
-<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Révelez la première carte de la &lt;i&gt;Salle commune&lt;r&gt;. &lt;g&gt; Si son coût est de 5 ou plus gagnez-la. Sinon défaussez une carte de valeur équivalente ou supérieur. Si vous ne pouvez pas défausser de carte, perdez -1 &lt;MORAL&gt;"   textsize="30" textsizebold="30" />
+<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Révelez la première carte de la &lt;i&gt;Salle commune&lt;r&gt;. Appliquez son effet comme si vous la jouiez et détruisez-la."   textsize="30" textsizebold="30" />
 <property name="Number in Deck" value="1" />
 <styles>
 <style name="Villains">
@@ -1922,7 +1922,7 @@
 <image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
 <image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
 <icon name="Second Power" value="NONE" />
-<text name="Cost" value="5" />
+<text name="Cost" value="7" />
 <elementgroup name="Recruit" visible="false">
 <icon name="Recruit Icon" value="RECRUIT" />
 <text name="Recruit Value" value="0" />
@@ -1935,7 +1935,7 @@
 <icon name="Piercing Icon" value="PIERCING" />
 <text name="Piercing Value" value="0" />
 </elementgroup>
-<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Au début du prochain tour ne piochez pas de carte des &lt;i&gt;Forces du mal&lt;r&gt;."   textsize="30" textsizebold="30" />
+<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Vous pouvez mettre une carte de &lt;i&gt;Poudlard&lt;r&gt;  sur la &lt;i&gt;Cabane de Hagrid&lt;r&gt;."   textsize="30" textsizebold="30" />
 <property name="Number in Deck" value="1" />
 <styles>
 <style name="Villains">
@@ -1958,7 +1958,7 @@
 <image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
 <image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
 <icon name="Second Power" value="NONE" />
-<text name="Cost" value="5" />
+<text name="Cost" value="9" />
 <elementgroup name="Recruit" visible="false">
 <icon name="Recruit Icon" value="RECRUIT" />
 <text name="Recruit Value" value="0" />
@@ -1971,7 +1971,7 @@
 <icon name="Piercing Icon" value="PIERCING" />
 <text name="Piercing Value" value="0" />
 </elementgroup>
-<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Choisissez une classe, la carte &lt;i&gt;Pull de Noël&lt;r&gt;  est considérée comme appartenant à cette classe jusqu&apos;à la fin du tour."   textsize="30" textsizebold="30" />
+<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Le joueur de votre choix pioche une carte."   textsize="30" textsizebold="30" />
 <property name="Number in Deck" value="1" />
 <styles>
 <style name="Villains">
@@ -1994,7 +1994,7 @@
 <image name="back_text" path="back_text.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
 <image name="back_cost" path="back_cost.png" zoom="1.0" imageOffsetX="0" imageOffsetY="0" />
 <icon name="Second Power" value="NONE" />
-<text name="Cost" value="5" />
+<text name="Cost" value="8" />
 <elementgroup name="Recruit" visible="false">
 <icon name="Recruit Icon" value="RECRUIT" />
 <text name="Recruit Value" value="0" />
@@ -2007,7 +2007,7 @@
 <icon name="Piercing Icon" value="PIERCING" />
 <text name="Piercing Value" value="0" />
 </elementgroup>
-<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Défaussez cette carte pour assommer jusqu&apos;à &lt;g&gt; 3 ennemis. &lt;g&gt; Ils sont considérés comme hors de la zone de combat jusqu&apos;à la fin du tour."   textsize="30" textsizebold="30" />
+<textarea name="Card Text" value="&lt;k&gt;Fourniture &lt;r&gt; &lt;g&gt; Considérez un ennemi comme hors de la zone de combat."   textsize="30" textsizebold="30" />
 <property name="Number in Deck" value="1" />
 <styles>
 <style name="Villains">
